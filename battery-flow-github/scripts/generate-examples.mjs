@@ -1,0 +1,11 @@
+import { writeFile, mkdir } from 'node:fs/promises';
+import { inDemoWater } from '../public/model.js';
+await mkdir('examples', {recursive:true});
+const longitude=Array.from({length:16},(_,i)=>Number((-74.048+i*.0025).toFixed(5)));
+const latitude=Array.from({length:21},(_,i)=>Number((40.674+i*.0025).toFixed(5)));
+const wetMask=latitude.flatMap(lat=>longitude.map(lon=>inDemoWater(lon,lat)?1:0));
+const times=Array.from({length:13},(_,i)=>new Date(Date.UTC(2026,0,1,0,i*30)).toISOString());
+const field={schemaVersion:1,kind:'hydrodynamic-field',name:'SYNTHETIC EXAMPLE — not a NYC model',provenance:'Generated solely to demonstrate the import format. Constant southward flow in a schematic wet mask; no observational validation.',crs:'EPSG:4326',velocityUnits:'m/s',times,grid:{longitude,latitude,wetMask},u:times.map(()=>wetMask.map(w=>w*.02)),v:times.map(()=>wetMask.map(w=>w*-.16))};
+await writeFile('examples/SYNTHETIC-velocity-field.json',JSON.stringify(field));
+await writeFile('examples/SYNTHETIC-lab-samples.csv','id,latitude,longitude,collected_at,target,value,unit,qualifier,method\nEXAMPLE-ONLY-01,40.700,-74.025,2026-01-01T12:00:00Z,Enterococcus indicator,12,MPN/100 mL,<,Synthetic test row - not measured\nEXAMPLE-ONLY-02,40.697,-74.030,2026-01-01T12:30:00Z,Enterococcus indicator,80,MPN/100 mL,=,Synthetic test row - not measured\n');
+console.log('Created explicitly synthetic test fixtures.');

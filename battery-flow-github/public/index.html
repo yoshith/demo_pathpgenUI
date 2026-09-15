@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07151f">
+  <meta name="description" content="Explore microbial transport scenarios around NYC's Battery, alongside NOAA water levels. Research prototype with clearly distinguished observations and simulations.">
+  <title>Battery Flow — NYC microbial transport</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/vendor/leaflet.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/vendor/leaflet.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#scenario">Skip to scenario controls</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Battery Flow home"><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><path d="M3 11c6-8 12 8 18 0s10 0 10 0M3 18c6-8 12 8 18 0s10 0 10 0M3 25c6-8 12 8 18 0s10 0 10 0" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span>BATTERY<span class="brand-thin">FLOW</span><small>MICROBIAL TRANSPORT WORKSPACE</small></span></a>
+    <span class="location"><span class="location-cross">⌖</span> NEW YORK HARBOR <span class="location-divider">/</span> THE BATTERY</span>
+    <div class="top-actions"><span class="status" id="headerStatus"><i></i> Connecting to NOAA</span><button class="icon-button" id="methodButton" aria-label="About the model and data">?</button></div>
+  </header>
+  <div class="truth-bar"><span class="truth-label">RESEARCH PROTOTYPE</span><span id="truthText">Live water levels · Illustrative transport · No live pathogen measurements</span><button id="dataInfoButton">Data &amp; limits <span aria-hidden="true">↗</span></button></div>
+
+  <main class="workspace">
+    <aside class="sidebar" id="scenario" aria-label="Scenario controls">
+      <div class="sidebar-heading"><span class="eyebrow">01 / STUDY AREA</span><h1>The Battery<span class="coordinate-dot"></span></h1><p class="coordinates">40.7006° N &nbsp; 74.0142° W</p><span class="pill">NYC coastal pilot</span></div>
+      <section class="control-section"><div class="section-title"><h2>Transport scenario</h2><span class="small-badge" id="modelBadge">DEMO</span></div>
+        <label for="target">Tracer label</label>
+        <select id="target"><option value="Generic microbial tracer">Generic microbial tracer</option><option value="Enterococcus indicator">Enterococcus indicator</option><option value="E. coli indicator">E. coli indicator</option><option value="Norovirus genetic target">Norovirus genetic target</option></select>
+        <p class="field-help">Illustrative parameters; changing the label does not calibrate the biology.</p>
+        <div class="source-box"><span class="source-dot"></span><div><strong>Hypothetical release</strong><span id="sourceCoordinates">40.6990, −74.0240</span></div><button class="text-button" id="placeSource">Move</button></div>
+        <p class="field-help" id="placementHelp">A test location in the harbor, not a documented outfall.</p>
+        <label for="phase">Scenario flow direction</label>
+        <select id="phase"><option value="outbound">Outbound · toward the bay</option><option value="inbound">Inbound · up the harbor</option></select>
+        <div class="slider-label"><label for="speed">Current speed</label><output id="speedValue">0.25 m/s</output></div><input id="speed" type="range" min="0.05" max="0.65" step="0.05" value="0.25">
+        <div class="slider-label"><label for="diffusion">Dispersion</label><output id="diffusionValue">2 m²/s</output></div><input id="diffusion" type="range" min="0" max="12" step="0.5" value="2">
+        <div class="two-controls"><div><label for="halfLife">Half-life (h)</label><input id="halfLife" type="number" value="12" min="0.5" max="120" step="0.5"></div><div><label for="releaseMinutes">Release (min)</label><select id="releaseMinutes"><option value="0">Pulse</option><option value="30">30 min</option><option value="60" selected>60 min</option><option value="120">120 min</option></select></div></div>
+        <button class="primary-button" id="runButton"><span aria-hidden="true">↻</span> Update scenario</button>
+        <div class="scenario-message" id="scenarioMessage" role="status" aria-live="polite">Preparing the demonstration…</div>
+      </section>
+      <section class="control-section layers"><div class="section-title"><h2>Map layers</h2><span class="eyebrow">02</span></div>
+        <label class="switch-row"><span><i class="layer-line"></i> Flow arrows</span><input type="checkbox" id="arrowsToggle" checked role="switch"></label>
+        <label class="switch-row"><span><i class="layer-cloud"></i> Relative tracer density</span><input type="checkbox" id="plumeToggle" checked role="switch"></label>
+        <label class="switch-row"><span><i class="layer-sample"></i> Imported samples <span id="sampleCount" class="count">0</span></span><input type="checkbox" id="samplesToggle" checked role="switch"></label>
+      </section>
+      <section class="control-section connect"><div class="section-title"><h2>Bring your research data</h2></div><p>Import a velocity grid or laboratory samples to explore alongside this scenario.</p><button class="secondary-button" id="importButton"><span aria-hidden="true">＋</span> Import data</button><p id="importSummary" class="field-help">No flow model or laboratory samples loaded.</p><button class="text-button hidden" id="clearModel">Return to demo flow</button><button class="text-button hidden" id="clearSamples">Clear samples</button></section>
+      <div class="sidebar-footer"><span class="mini-wave">≈</span><span>RESEARCH BUILD <b>0.1</b></span><a href="https://coastalanalysis.onrender.com/" target="_blank" rel="noopener noreferrer">Sea-level analyzer ↗</a></div>
+    </aside>
+
+    <section class="map-workspace" aria-label="Battery map and scenario playback">
+      <div class="map-area">
+        <div id="map" role="region" aria-label="Interactive map of New York Harbor"></div>
+        <div class="map-title"><span class="map-mode" id="mapMode">ILLUSTRATIVE TRANSPORT</span><h2>Follow the flow.</h2><p id="mapSubtitle">Explore a hypothetical release near the Battery.</p></div>
+        <div class="map-toolbar"><button id="recenter" aria-label="Recenter on the Battery" title="Recenter on the Battery">⌖</button><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button></div>
+        <aside class="gauge-card" aria-label="NOAA station observations"><div class="gauge-heading"><span><i id="gaugeDot"></i> NOAA / 8518750</span><button id="refreshNoaa" aria-label="Refresh NOAA station data" title="Refresh NOAA">↻</button></div><p class="gauge-label">WATER LEVEL AT THE BATTERY</p><div class="gauge-number"><span id="waterLevel">—</span><span>m <small>MLLW</small></span></div><div class="gauge-status" id="gaugeStatus">Waiting for observations</div><div id="tideChart" class="tide-chart" role="img" aria-label="Water-level observations and tide predictions"></div><div class="chart-legend"><span><i></i>Observed</span><span><i></i>Tide prediction</span></div><p class="gauge-note">Gauge level is not flood depth or current speed.</p></aside>
+        <div id="tileError" class="tile-error hidden" role="status">Map tiles are unavailable. Check your connection or <button id="retryTiles">retry</button>.</div>
+        <div class="map-bottom"><div class="map-legend"><span class="legend-title">RELATIVE TRACER DENSITY</span><div class="color-scale"></div><div class="legend-labels"><span>Lower</span><span>Higher</span></div><p>Fixed scale · no concentration units</p></div><div class="map-note"><span class="amber-dot"></span><span id="modelNote">Demonstration flow field<br><strong>No measured pathogen locations</strong></span></div></div>
+      </div>
+      <section class="timeline" aria-label="Scenario playback"><div class="timeline-header"><div><span class="eyebrow">SCENARIO PLAYBACK</span><span id="timeLabel" class="time-label">+01:30 <small>AFTER RELEASE</small></span></div><button class="export-button" id="exportButton">Export scenario <span aria-hidden="true">↗</span></button></div><div class="playback"><button class="play-button" id="playButton" aria-label="Play scenario">▶</button><div class="timeline-range"><label class="sr-only" for="timeSlider">Minutes after hypothetical release</label><input id="timeSlider" type="range" min="0" max="72" step="1" value="18"><div class="time-ticks" id="timeTicks"><span>Release</span><span>+1 h</span><span>+2 h</span><span>+3 h</span><span>+4 h</span><span>+5 h</span><span>+6 h</span></div></div><label class="play-rate" for="playRate"><span class="sr-only">Playback speed</span><select id="playRate"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option></select></label></div><div class="timeline-footer"><span id="frameDetails">Computing tracer paths…</span><span id="timeContext">Elapsed scenario time, not a real-time pathogen forecast</span></div></section>
+    </section>
+  </main>
+
+  <dialog id="infoDialog"><div class="dialog-top"><span class="eyebrow">MODEL &amp; DATA</span><button class="icon-button close-dialog" aria-label="Close model information">×</button></div><h2>What this map can tell you</h2><p>This is a working research prototype for one NYC coastal study area. It does not detect all pathogens or provide a validated public-health forecast.</p><div class="evidence-row"><span class="evidence-tag observed">OBSERVED</span><div><h3>NOAA water levels</h3><p>Battery station 8518750, meters relative to MLLW. Times are stored in UTC and displayed in New York time. Observations may be preliminary or flagged. The app refreshes every five minutes and marks old or failed updates.</p></div></div><div class="evidence-row"><span class="evidence-tag modeled">SCENARIO</span><div><h3>Flow arrows and tracer plume</h3><p>By default, currents are user-set and schematic. They are not inferred from the tide gauge. The plume uses a normalized hypothetical release, dispersion, and a user-set half-life. Colors are relative tracer density, not CFU, gene copies, infection risk, or measured pathogen locations.</p></div></div><div class="evidence-row"><span class="evidence-tag imported">IMPORTED</span><div><h3>Your model and samples</h3><p>Import gridded u/v velocities to drive the tracer paths. Imported files are not automatically validated by this app. Laboratory points retain their organism, units, qualifier, method, and collection time; they do not calibrate the plume automatically. Files stay in this browser tab and disappear on reload.</p></div></div><h3>Before making scientific predictions</h3><p>You need time-varying hydrodynamic fields, appropriate wet/dry masks, measured microbial source loads, organism-specific fate parameters, and independent event samples. Basement and street flooding require a local inundation model. This version has no pluvial inundation, calibrated microbial concentrations, formal uncertainty bounds, or safety declarations.</p><h3>Sources</h3><p class="source-links"><a href="https://tidesandcurrents.noaa.gov/stationhome.html?id=8518750" target="_blank" rel="noopener noreferrer">NOAA Battery station ↗</a><a href="https://api.tidesandcurrents.noaa.gov/api/prod/" target="_blank" rel="noopener noreferrer">NOAA data API ↗</a><a href="https://www.nyc.gov/site/dep/water/harbor-water-quality.page" target="_blank" rel="noopener noreferrer">NYC Harbor Water Quality ↗</a></p></dialog>
+
+  <dialog id="importDialog"><div class="dialog-top"><span class="eyebrow">CONNECT YOUR DATA</span><button class="icon-button close-dialog" aria-label="Close import dialog">×</button></div><h2>A path from demo to research</h2><p>Choose a local file. Nothing is uploaded or saved to a server.</p><div class="import-option"><span class="file-icon">UV</span><div><h3>Hydrodynamic velocity field</h3><p>JSON · EPSG:4326 · eastward u / northward v in m/s · static wet mask · max 12 MB</p><label class="secondary-button file-label" for="modelFile">Choose velocity JSON</label><input type="file" id="modelFile" accept=".json,application/json" class="sr-only"></div></div><div class="import-option"><span class="file-icon">LAB</span><div><h3>Laboratory sample points</h3><p>CSV · organism, result, qualifier, units, and collection time · max 2 MB</p><label class="secondary-button file-label" for="sampleFile">Choose samples CSV</label><input type="file" id="sampleFile" accept=".csv,text/csv" class="sr-only"></div></div><div id="importMessage" class="import-message" role="status" aria-live="polite"></div><details><summary>Required file structure</summary><p><b>Flow JSON:</b> schemaVersion: 1; kind: hydrodynamic-field; name; crs: EPSG:4326; velocityUnits: m/s; times: UTC ISO timestamps; grid: longitude, latitude, wetMask; u and v: one flat array per time. Longitude changes fastest. See examples/ in the repository.</p><p><b>Samples CSV:</b> id, latitude, longitude, collected_at, target, value, unit, qualifier; optional method. Use =, &lt;, or &gt; as qualifier. Missing values are never treated as zero.</p></details></dialog>
+  <div class="toast hidden" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

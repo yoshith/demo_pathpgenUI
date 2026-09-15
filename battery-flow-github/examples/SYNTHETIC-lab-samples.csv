@@ -1,0 +1,3 @@
+id,latitude,longitude,collected_at,target,value,unit,qualifier,method
+EXAMPLE-ONLY-01,40.700,-74.025,2026-01-01T12:00:00Z,Enterococcus indicator,12,MPN/100 mL,<,Synthetic test row - not measured
+EXAMPLE-ONLY-02,40.697,-74.030,2026-01-01T12:30:00Z,Enterococcus indicator,80,MPN/100 mL,=,Synthetic test row - not measured
