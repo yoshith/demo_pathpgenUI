@@ -3,11 +3,18 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { createNoaaService, STATION } from './src/noaa.mjs';
+import { createDepService } from './src/dep.mjs';
+import { createStevensService } from './src/stevens.mjs';
+import { createSewerService, createAdvisoryService } from './src/sewers.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(ROOT, 'public');
 const noaa = createNoaaService();
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.txt': 'text/plain; charset=utf-8' };
+const dep = createDepService();
+const stevens = createStevensService();
+const sewers = createSewerService();
+const advisories = createAdvisoryService();
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8', '.geojson': 'application/geo+json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.txt': 'text/plain; charset=utf-8' };
 const csp = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.basemaps.cartocdn.com https://tile.openstreetmap.org; connect-src 'self'; font-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'";
 
 export function makeServer() {
@@ -21,10 +28,20 @@ export function makeServer() {
       const route = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
       if (route === '/api/health') {
         res.writeHead(200, { 'Content-Type': types['.json'], 'Cache-Control': 'no-store' });
-        res.end(JSON.stringify({ ok: true, application: 'battery-flow', version: '0.1.0', station: STATION.id })); return;
+        res.end(JSON.stringify({ ok: true, application: 'battery-flow', version: '0.2.0', station: STATION.id })); return;
       }
       if (route === '/api/station') {
         const data = await noaa.read();
+        res.writeHead(200, { 'Content-Type': types['.json'], 'Cache-Control': 'no-store' });
+        res.end(JSON.stringify(data)); return;
+      }
+      if (route === '/api/observations' || route === '/api/stevens') {
+        const data = await (route === '/api/observations' ? dep.read() : stevens.read());
+        res.writeHead(200, { 'Content-Type': types['.json'], 'Cache-Control': 'no-store' });
+        res.end(JSON.stringify(data)); return;
+      }
+      if (route === '/api/sewers' || route === '/api/advisories') {
+        const data = await (route === '/api/sewers' ? sewers.read() : advisories.read());
         res.writeHead(200, { 'Content-Type': types['.json'], 'Cache-Control': 'no-store' });
         res.end(JSON.stringify(data)); return;
       }

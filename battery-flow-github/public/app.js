@@ -4,7 +4,7 @@ import { validateField, parseSamples } from './imports.js';
 const $ = id => document.getElementById(id);
 const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const localTime = (value, options = {}) => new Date(value).toLocaleString('en-US', { timeZone:'America/New_York', month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short',...options });
-const state = {source:{...DEFAULT_SOURCE},field:null,samples:[],result:null,config:null,frame:18,playing:false,placing:false,requestId:0,noaa:null,fetching:false};
+const state = {source:{...DEFAULT_SOURCE},field:null,samples:[],result:null,config:null,frame:18,playing:false,placing:false,requestId:0,noaa:null,fetching:false,mode:'observations',dep:null,stevens:null,loadingDep:false,sewers:null,advisories:null,boundaries:null,fieldOrigin:null,suppressAutoModel:false};
 let toastTimer, playbackTimer, lastDraw=0;
 function toast(message) { $('toast').textContent=message;$('toast').classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.add('hidden'),5000); }
 
@@ -22,6 +22,11 @@ station.bindPopup('<strong>The Battery · 8518750</strong><p>NOAA tide gauge. Wa
 const release=L.marker([state.source.latitude,state.source.longitude],{icon:L.divIcon({className:'custom-station',html:'<div class="release-marker"></div>',iconSize:[13,13],iconAnchor:[6,6]}),title:'Hypothetical tracer release'}).addTo(map);
 release.bindTooltip('HYPOTHETICAL RELEASE',{direction:'left',offset:[-10,0]});
 const samplesLayer=L.layerGroup().addTo(map);
+const depLayer=L.layerGroup().addTo(map);
+const sewerLayer=L.layerGroup().addTo(map);
+map.createPane('advisoryPane');map.getPane('advisoryPane').style.zIndex='350';
+const advisoryLayer=L.layerGroup().addTo(map);
+map.removeLayer(release);
 
 const canvas=L.DomUtil.create('canvas','flow-canvas');
 map.getPanes().overlayPane.appendChild(canvas);
@@ -68,9 +73,13 @@ function renderFrame(){
 
 function draw(now){
   ctx.clearRect(0,0,size.x,size.y);
-  if(!state.result||!state.config)return;
-  const frame=state.result.frames[state.frame];
-  if($('plumeToggle').checked){
+  const monitoring=state.mode==='observations';
+  if(!monitoring&&(!state.result||!state.config))return;
+  if(monitoring&&!state.field)return;
+  const flowConfig=monitoring?{field:state.field}:state.config;
+  const frame=monitoring?{seconds:(Date.now()-Date.parse(state.field.times[0]))/1000,particles:[]}:state.result.frames[state.frame];
+  if(monitoring&&(frame.seconds<0||Date.now()>Date.parse(state.field.times.at(-1))))return;
+  if(!monitoring&&$('plumeToggle').checked){
     const bins=plumeBins(frame);
     const meterPx=Math.abs(map.latLngToContainerPoint([40.701,-74.024]).y-map.latLngToContainerPoint([40.700,-74.024]).y)/111.32;
     const radius=Math.max(4,Math.min(150,125*meterPx));
@@ -89,7 +98,7 @@ function draw(now){
     const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const progress=reduced?0:(now%5000)/5000;
     for(let y=32;y<size.y;y+=59)for(let x=32;x<size.x;x+=65){
-      const ll=map.containerPointToLatLng([x,y]);const v=velocityAt(state.config,ll.lng,ll.lat,frame.seconds);
+      const ll=map.containerPointToLatLng([x,y]);const v=velocityAt(flowConfig,ll.lng,ll.lat,frame.seconds);
       if(!v)continue;const speed=Math.hypot(v.u,v.v);if(speed<.001)continue;
       const dx=v.u/speed,dy=-v.v/speed,length=10+Math.min(speed,.8)*30;
       const offset=progress*length;
@@ -144,6 +153,13 @@ function syncModelUI(){
   $('clearModel').classList.toggle('hidden',!imported);
   $('clearSamples').classList.toggle('hidden',!state.samples.length);
   $('importSummary').textContent=`${imported?state.field.name:'No flow model loaded'} · ${state.samples.length} sample${state.samples.length===1?'':'s'} in this tab.`;
+  if(state.mode==='observations'){
+    $('truthText').textContent='NOAA water levels · Published DEP lab samples · No live pathogen detection';
+    const flowCoversNow=state.field&&Date.now()>=Date.parse(state.field.times[0])&&Date.now()<=Date.parse(state.field.times.at(-1));
+    $('mapMode').textContent=flowCoversNow?'LAB OBSERVATIONS + MODELED FLOW':'PUBLISHED LABORATORY OBSERVATIONS';
+    $('mapSubtitle').textContent=state.dep?.samples?.length?`${state.dep.stationCount} mapped DEP stations · click a point for its collection date.`:(state.dep?'No published samples are available in this area.':'Loading dated NYC DEP indicator samples.');
+    $('modelNote').innerHTML=flowCoversNow?'Numerical model flow<br><strong>Dated lab data; no pathogen forecast</strong>':state.field?'Flow file is outside the current time<br><strong>Use scenario playback to explore it</strong>':'Dated indicator measurements<br><strong>No live pathogen map</strong>';
+  }
 }
 function importedMessage(message,error=false){$('importMessage').textContent=message;$('importMessage').classList.toggle('error',error);}
 $('modelFile').onchange=async event=>{
@@ -161,9 +177,9 @@ $('modelFile').onchange=async event=>{
       }
       if(!found)throw new Error('No contiguous wet grid cell is available for interpolation.');
     }
-    state.field=field;state.source=source;updateSource();syncModelUI();runScenario();
+    state.field=field;state.fieldOrigin='manual';state.source=source;updateSource();syncModelUI();if(state.mode==='scenario')runScenario();
     map.fitBounds([[field.grid.latitude[0],field.grid.longitude[0]],[field.grid.latitude.at(-1),field.grid.longitude.at(-1)]],{padding:[40,40],maxZoom:15});
-    importedMessage(`Loaded ${field.name}. These velocities now drive the illustrative tracer. The app has not verified model accuracy.`);
+    importedMessage(`Loaded ${field.name}. These velocities are available in the map and optional scenario. The app has not verified model accuracy.`);
   }catch(error){importedMessage(error.message,true);}finally{event.target.value='';}
 };
 function drawSamples(){
@@ -179,7 +195,7 @@ $('sampleFile').onchange=async event=>{
   try{if(file.size>2*1024*1024)throw new Error('Sample CSV must be 2 MB or smaller.');state.samples=parseSamples(await file.text());drawSamples();importedMessage(`Loaded ${state.samples.length} sample points. Collection times, units, and detection-limit qualifiers are preserved. These do not calibrate the plume.`);}
   catch(error){importedMessage(error.message,true);}finally{event.target.value='';}
 };
-$('clearModel').onclick=()=>{state.field=null;state.source={...DEFAULT_SOURCE};updateSource();syncModelUI();runScenario();};
+$('clearModel').onclick=()=>{state.field=null;state.fieldOrigin=null;state.suppressAutoModel=true;state.source={...DEFAULT_SOURCE};updateSource();syncModelUI();if(state.mode==='scenario')runScenario();};
 $('clearSamples').onclick=()=>{state.samples=[];drawSamples();toast('Sample points cleared from this tab.');};
 
 function renderChart(data){
@@ -216,8 +232,113 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();els
 $('exportButton').onclick=()=>{
   if(!state.result){toast('Run a scenario before exporting.');return;}
   const frame=state.result.frames[state.frame];
-  const exportData={application:'Battery Flow',version:'0.1.0',exportedAt:new Date().toISOString(),scientificStatus:'Uncalibrated research scenario; not a live pathogen forecast',target:state.config.target,scenarioParameters:{...state.config,field:undefined},flowProvenance:state.config.field?{name:state.config.field.name,provenance:state.config.field.provenance,validationStatus:state.config.field.validationStatus,modelStart:state.config.field.times[0]}:{name:'Schematic demonstration flow; independent of NOAA gauge'},elapsedSeconds:frame.seconds,method:state.result.method,boundaryHolds:state.result.boundaryHolds,noaaSnapshot:state.noaa?{station:state.noaa.station,status:state.noaa.status,latest:state.noaa.latest,sourceUrls:state.noaa.sourceUrls}:null,importedSamples:state.samples,particles:{type:'FeatureCollection',features:frame.particles.map(p=>({type:'Feature',geometry:{type:'Point',coordinates:[p.longitude,p.latitude]},properties:{relativeMass:p.weight}}))},limitations:['Normalized tracer mass, not measured or calibrated concentration.','Imported sample results are not verified by this app.','No uncertainty coverage guarantee, safety classification, or pluvial inundation model.','Grid boundary handling is illustrative; validate numerical transport before scientific use.']};
+  const exportData={application:'Battery Flow',version:'0.2.0',exportedAt:new Date().toISOString(),scientificStatus:'Uncalibrated research scenario; not a live pathogen forecast',target:state.config.target,scenarioParameters:{...state.config,field:undefined},flowProvenance:state.config.field?{name:state.config.field.name,provenance:state.config.field.provenance,validationStatus:state.config.field.validationStatus,modelStart:state.config.field.times[0]}:{name:'Schematic demonstration flow; independent of NOAA gauge'},elapsedSeconds:frame.seconds,method:state.result.method,boundaryHolds:state.result.boundaryHolds,noaaSnapshot:state.noaa?{station:state.noaa.station,status:state.noaa.status,latest:state.noaa.latest,sourceUrls:state.noaa.sourceUrls}:null,importedSamples:state.samples,particles:{type:'FeatureCollection',features:frame.particles.map(p=>({type:'Feature',geometry:{type:'Point',coordinates:[p.longitude,p.latitude]},properties:{relativeMass:p.weight}}))},limitations:['Normalized tracer mass, not measured or calibrated concentration.','Imported sample results are not verified by this app.','No uncertainty coverage guarantee, safety classification, or pluvial inundation model.','Grid boundary handling is illustrative; validate numerical transport before scientific use.']};
   const url=URL.createObjectURL(new Blob([JSON.stringify(exportData,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`battery-flow-scenario-${new Date().toISOString().slice(0,10)}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);toast('Scenario and provenance exported.');
 };
 
-resizeCanvas();updateSource();runScenario();refreshNoaa();
+function setMode(mode){
+  state.mode=mode;pause();placement(false);
+  const observing=mode==='observations';
+  $('observationsView').classList.toggle('active',observing);$('observationsView').setAttribute('aria-pressed',String(observing));
+  $('scenarioView').classList.toggle('active',!observing);$('scenarioView').setAttribute('aria-pressed',String(!observing));
+  $('scenarioControls').classList.toggle('hidden',observing);$('observationControls').classList.toggle('hidden',!observing);
+  $('scenarioTimeline').classList.toggle('hidden',observing);$('observationBar').classList.toggle('hidden',!observing);
+  $('mapHeadline').textContent=observing?'See the measurements.':'Follow the flow.';
+  $('mapLegend').innerHTML=observing?'<span class="legend-title">PUBLISHED LAB SAMPLES</span><div class="observed-legend"><span><i class="observed-marker"></i>Lab sample station</span><span><i class="layer-outfall"></i>CSO location · status unknown</span><span><i class="layer-advisory"></i>DEP advisory area</span></div><p>Click a point for values and dates.</p>':'<span class="legend-title">RELATIVE TRACER DENSITY</span><div class="color-scale"></div><div class="legend-labels"><span>Lower</span><span>Higher</span></div><p>Fixed scale · no concentration units</p>';
+  observing?map.removeLayer(release):release.addTo(map);
+  syncModelUI();if(!observing)runScenario();draw(performance.now());
+}
+$('observationsView').onclick=()=>setMode('observations');$('scenarioView').onclick=()=>setMode('scenario');
+
+function displayedDep(){return(state.dep?.samples||[]).filter(s=>($('depTarget').value==='all'||s.target===$('depTarget').value)&&($('depLayer').value==='all'||s.layer===$('depLayer').value));}
+function resultText(sample){return`${sample.qualifier==='='?'':sample.qualifier+' '}${sample.value} ${sample.unit}${sample.providerFlag&&!['<','>','<=','>=','='].includes(sample.providerFlag)?` [provider flag ${sample.providerFlag}]`:''}`;}
+function resultDate(sample){return `${sample.collectedDate}${sample.collectedTimeReported?' '+sample.collectedTimeReported:''} (as reported)`;}
+function drawDep(){
+  depLayer.clearLayers();const samples=displayedDep(),stations=new Map();
+  for(const sample of samples){if(!stations.has(sample.station))stations.set(sample.station,[]);stations.get(sample.station).push(sample);}
+  for(const [name,results] of stations){
+    const first=results[0];
+    const content=`<strong>NYC DEP · ${escape(name)}</strong><small>Published laboratory observations; not current conditions</small>${results.map(s=>`<div class="dep-popup-result"><b>${escape(s.target)} · ${escape(s.layer)}</b><span>${escape(resultText(s))}</span><small>Collected ${escape(resultDate(s))}${s.depthFtReported?`<br>Sample depth: ${escape(s.depthFtReported)} ft`:''}</small></div>`).join('')}<small>Station coordinates from ${escape(first.coordinateRecordDate||'source record')}${first.locationBasis==='historical_station_record'?' (historical station lookup)':''}${first.coordinateColumnsSwapped?'; reversed provider coordinate columns corrected':''}.<br>Assay and collection timezone are not specified per result. Flags and units are retained as published.</small><p><a href="${escape(first.source)}" target="_blank" rel="noopener noreferrer">Original DEP dataset ↗</a></p>`;
+    L.circleMarker([first.latitude,first.longitude],{radius:7,color:'#c9fff0',weight:2,fillColor:'#42bba0',fillOpacity:.9}).bindTooltip(`DEP ${escape(name)} · ${escape(results[0].collectedDate)}`).bindPopup(content,{maxWidth:320}).addTo(depLayer);
+  }
+  if(!$('depToggle').checked)map.removeLayer(depLayer);
+  const sorted=[...stations.values()].sort((a,b)=>map.distance([40.7006,-74.0142],[a[0].latitude,a[0].longitude])-map.distance([40.7006,-74.0142],[b[0].latitude,b[0].longitude]));
+  if(sorted.length){
+    const nearest=sorted[0],first=nearest[0];
+    $('nearestStationLabel').textContent=`NEAREST SHOWN DEP STATION · ${first.station} · ${(map.distance([40.7006,-74.0142],[first.latitude,first.longitude])/1000).toFixed(1)} KM FROM GAUGE`;
+    $('nearestReadings').innerHTML=nearest.map(s=>`<div class="observed-reading"><span>${escape(s.target)} · ${escape(s.layer)}</span><strong>${escape(s.qualifier==='='?'':s.qualifier+' ')}${escape(s.value)} <small>${escape(s.unit)}</small></strong><span>${escape(s.collectedDate)}${s.providerFlag&&!['<','>','<=','>=','='].includes(s.providerFlag)?` · provider flag ${escape(s.providerFlag)}`:''}</span></div>`).join('');
+    $('observationDateNote').textContent=`${stations.size} stations shown. Historical results are not evidence of present-day concentrations. Location records may predate the samples.`;
+  }else{$('nearestStationLabel').textContent='NO MATCHING PUBLISHED SAMPLES';$('nearestReadings').textContent='No records match this indicator/layer selection.';$('observationDateNote').textContent='Missing measurements are not treated as zero.';}
+  syncModelUI();
+}
+async function refreshDep(){
+  if(state.loadingDep)return;state.loadingDep=true;$('refreshDep').disabled=true;
+  try{
+    const response=await fetch('/api/observations',{signal:AbortSignal.timeout(23000)});if(!response.ok)throw new Error('DEP data service unavailable');
+    const data=await response.json();state.dep=data;
+    const statusLabels={refreshed:'Retrieved from DEP',saved_snapshot:'Saved authentic DEP snapshot',cached:'Last retrieved DEP records',unavailable:'DEP data unavailable'};
+    $('depStatus').textContent=`${statusLabels[data.sourceStatus]||'DEP records'} · ${data.samples.length} results at ${data.stationCount} stations. Latest published sample: ${data.latestPublishedSampleDate||'not available'}.${data.error?' Refresh failed; dates remain unchanged.':''}`;
+    drawDep();
+  }catch(error){$('depStatus').textContent=state.dep?'Refresh failed. Previously retrieved, dated measurements remain visible.':'Published samples could not be loaded. Retry when the connection is available.';if(!state.dep){$('nearestReadings').textContent='No observation data available.';$('mapSubtitle').textContent='No published observations loaded.';}}
+  finally{state.loadingDep=false;$('refreshDep').disabled=false;}
+}
+async function refreshStevens(){
+  try{
+    const response=await fetch('/api/stevens',{signal:AbortSignal.timeout(23000)});if(!response.ok)throw new Error('Stevens connection status unavailable');
+    const data=await response.json();state.stevens=data;
+    $('stevensBadge').textContent=({not_configured:'NOT CONNECTED',unavailable:'UNAVAILABLE',historical:'HISTORICAL MODEL',future:'FUTURE MODEL',available:'MODEL AVAILABLE',stale:'STALE MODEL'})[data.status]||'UNKNOWN';
+    $('stevensStatus').textContent=data.message;
+    if(data.field&&state.fieldOrigin!=='manual'&&!state.suppressAutoModel){state.field=validateField(data.field);state.fieldOrigin='secom';syncModelUI();if(state.mode==='scenario')runScenario();draw(performance.now());}
+  }catch(error){$('stevensBadge').textContent='UNAVAILABLE';$('stevensStatus').textContent='Numerical model connection could not be checked. No replacement velocities are invented.';}
+}
+$('depTarget').onchange=drawDep;$('depLayer').onchange=drawDep;$('refreshDep').onclick=refreshDep;
+$('depToggle').onchange=()=>{$('depToggle').checked?depLayer.addTo(map):map.removeLayer(depLayer);};
+$('exportObservations').onclick=()=>{
+  if(!state.dep?.samples.length){toast('No observations are available to export.');return;}
+  const record={application:'Battery Flow',version:'0.2.0',exportedAt:new Date().toISOString(),...state.dep,displayedSamples:displayedDep(),interpretation:'Published historical indicator measurements; not live pathogen detections. Dates, qualifiers, units, source and coordinate provenance are retained.'};
+  const url=URL.createObjectURL(new Blob([JSON.stringify(record,null,2)],{type:'application/json'}));const link=document.createElement('a');link.href=url;link.download='battery-dep-observations.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
+};
+setInterval(refreshDep,30*60_000);setInterval(refreshStevens,30*60_000);
+resizeCanvas();updateSource();syncModelUI();refreshNoaa();refreshDep();refreshStevens();
+
+function downloadJson(name,data){const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);}
+async function refreshSewers(){
+  try{
+    const response=await fetch('/api/sewers',{signal:AbortSignal.timeout(23000)});if(!response.ok)throw new Error('Inventory service unavailable');
+    const data=await response.json();state.sewers=data;sewerLayer.clearLayers();
+    for(const f of data.features){const p=f.properties;
+      L.circleMarker([f.geometry.coordinates[1],f.geometry.coordinates[0]],{radius:4,color:'#e5b77d',weight:1,fillColor:'#ba8552',fillOpacity:.7}).bindTooltip(`CSO ${escape(p.outfall)} · discharge unknown`).bindPopup(`<strong>CSO outfall ${escape(p.outfall)}</strong><p>Permit: ${escape(p.permit||'not supplied')}<br>Receiving water: ${escape(p.receivingWater||'not supplied')}</p><small>Official DEC inventory location.<br>Live discharge: unknown<br>Discharge rate: not supplied<br>Microbial load: not supplied<br>Inventory edited: ${escape(data.sourceDataEditedAt?.slice(0,10)||'not supplied')}</small><p><a href="${escape(data.source)}" target="_blank" rel="noopener noreferrer">Original outfall inventory ↗</a></p>`).addTo(sewerLayer);
+    }
+    $('sewerCount').textContent=`${data.count} OUTFALLS`;
+    $('sewerStatus').textContent=`${data.count} official DEC outfalls in the NYC pilot. ${data.sourceStatus==='refreshed'?'Inventory retrieved.':'Saved inventory; refresh unavailable.'} Locations show potential sources, not current overflow events.`;
+  }catch(error){$('sewerStatus').textContent='Outfall inventory refresh unavailable. Any previously loaded locations remain visible; discharge status is unknown.';}
+}
+function drawAdvisories(){
+  advisoryLayer.clearLayers();if(!state.boundaries)return;
+  const type=$('advisoryType').value,records=new Map((state.advisories?.records||[]).filter(r=>r.type===type).map(r=>[r.waterbodyId,r]));
+  const current=state.advisories?.status==='retrieved';
+  L.geoJSON(state.boundaries,{pane:'advisoryPane',style:f=>{const r=records.get(f.properties.waterbodyId),known=current&&r,active=known&&r.providerAdvisory;return{color:active?'#eab26d':'#718795',weight:1,fillColor:active?'#d69443':'#8093a0',fillOpacity:active ? .15 : .02,dashArray:known?null:'4 5'};},onEachFeature:(f,layer)=>{
+    const r=records.get(f.properties.waterbodyId),known=current&&r;
+    const status=known?(r.providerAdvisory?'DEP reports an advisory':'DEP reports no advisory'):'Advisory status unavailable or old';
+    const content=`<strong>${escape(f.properties.name)}</strong><p>${escape(type==='WQ'?'Water-quality advisory':'CSO advisory')}<br>${escape(status)}</p>${r?`<small>Provider message: ${escape(r.message)}<br>Provider time: ${escape(r.occurredOnReported)} (timezone unspecified)<br>Duration field: ${escape(r.durationHoursReported)} h<br>Retrieved: ${escape(state.advisories.retrievedAt)}</small>`:'<small>No current provider record loaded.</small>'}<p>Rainfall/model-based advisory, not a bacterial measurement or proof of water safety.</p><a href="https://nycwaterbodyadvisory.azurewebsites.net/" target="_blank" rel="noopener noreferrer">Check official DEP dashboard ↗</a>`;
+    layer.bindTooltip(escape(f.properties.name)).bindPopup(content,{maxWidth:315});
+  }}).addTo(advisoryLayer);
+  const selected=[...records.values()],active=selected.filter(r=>r.providerAdvisory).length;
+  $('advisoryStatus').textContent=current?`${type==='WQ'?'Water quality':'CSO'}: DEP reports advisories for ${active} of ${selected.length} waterbodies citywide. Provider period: ${state.advisories.latestReported} (timezone unspecified). No advisory does not establish safety.`:'DEP advisory feed unavailable or old. Boundaries are reference areas; current advisory status is unknown.';
+}
+async function refreshAdvisories(){
+  try{
+    const requests=[fetch('/api/advisories',{signal:AbortSignal.timeout(23000)})];
+    if(!state.boundaries)requests.push(fetch('/waterbody-boundaries.geojson'));
+    const responses=await Promise.allSettled(requests);
+    if(responses[1]?.status==='fulfilled'&&responses[1].value.ok)state.boundaries=await responses[1].value.json();
+    if(responses[0].status!=='fulfilled'||!responses[0].value.ok)throw new Error('Advisory feed unavailable');
+    state.advisories=await responses[0].value.json();drawAdvisories();
+  }catch(error){if(state.advisories)state.advisories.status='stale';$('advisoryStatus').textContent='DEP advisory refresh failed. Current status is unknown; use the official dashboard.';drawAdvisories();}
+}
+$('sewersToggle').onchange=()=>{$('sewersToggle').checked?sewerLayer.addTo(map):map.removeLayer(sewerLayer);};
+$('advisoriesToggle').onchange=()=>{$('advisoriesToggle').checked?advisoryLayer.addTo(map):map.removeLayer(advisoryLayer);};
+$('advisoryType').onchange=drawAdvisories;
+$('exportSewers').onclick=()=>{if(!state.sewers&&!state.advisories){toast('No sewer or advisory data is available yet.');return;}downloadJson('battery-sewer-and-advisory-data.json',{application:'Battery Flow',version:'0.2.0',exportedAt:new Date().toISOString(),outfalls:state.sewers,advisories:state.advisories,interpretation:'Inventory locations and official model-based advisories. No measured outfall discharge or microbial source loading.'});};
+setInterval(refreshSewers,60*60_000);setInterval(refreshAdvisories,5*60_000);
+refreshSewers();refreshAdvisories();

@@ -1,59 +1,50 @@
-# Put Battery Flow on GitHub and Render
+# Update your GitHub / Render website
 
-This folder is the complete website. No NOAA API key is needed.
+This ZIP contains the complete version 0.2 application. The default map now shows real, dated DEP lab observations with official sewer/outfall and modeled advisory layers. sECOM numerical output remains pending access.
 
-## 1. Upload to GitHub
+## Your existing repository
 
-1. Unzip `battery-flow-github.zip` on your computer.
-2. Create a new GitHub repository, for example `battery-flow`.
-3. Choose **uploading an existing file** (or **Add file → Upload files**).
-4. Drag the extracted files AND folders into the upload window.
-5. Commit the upload.
+Your repository is `yoshith/demo_pathpgenUI`, with the app inside `battery-flow-github`.
 
-**Upload the extracted contents, not the ZIP.** At the top level of the repository you must see `package.json`, `server.mjs`, `render.yaml`, and `public/`. Do not put everything inside an extra parent folder. Files in `public/vendor/` must be included.
+1. Download and unzip the updated `battery-flow-github.zip`.
+2. In GitHub, open the existing `battery-flow-github` directory.
+3. Choose **Add file → Upload files**. Upload the extracted app files and folders into that directory, replacing the previous versions. Include `public`, `src`, `data`, `scripts`, `test`, `docs`, `examples`, both package files, and `server.mjs`.
+4. Commit the upload to the branch connected to Render, normally `main`.
+5. Let Render auto-deploy, or choose **Manual Deploy → Deploy latest commit**.
 
-## 2. Deploy on Render
+Upload extracted files, not the ZIP. Avoid an extra nested `battery-flow-github/battery-flow-github` directory. The correct path is `battery-flow-github/package.json` in your current repository.
 
-1. In Render, choose **New → Web Service** and connect your GitHub repository.
-2. Select the branch you uploaded, usually `main`.
-3. Use these settings:
+## Render settings
 
-| Setting | Value |
+| Setting | Value for your existing layout |
 | --- | --- |
-| Runtime | Node |
-| Root directory | Leave blank if `package.json` is at repository root |
-| Build command | `npm ci && npm run build` |
-| Start command | `npm start` |
-| Health check path | `/api/health` |
+| Service type / language | Web Service / Node |
+| Branch | `main` |
+| Root Directory | `battery-flow-github` |
+| Build Command | `npm ci && npm run build` |
+| Start Command | `npm start` |
+| Health Check Path | `/api/health` |
+| Required environment variables | None |
 
-Render supplies `PORT`; the server binds to `0.0.0.0`. No environment secrets are required. Alternatively, create a Render Blueprint from the included `render.yaml`; review Render's plan and pricing before deploying.
+If you instead upload the contents at the repository root, leave Root Directory blank. `package.json` must be in whichever directory Render uses as its root.
 
-Use a **Web Service**, because `/api/station` runs on the server. A Static Site or GitHub Pages alone will not run the NOAA proxy.
+Type only **`npm start`** in the Start Command field. Render's `battery-flow-github/ $` prefix is already part of its interface.
 
-The included blueprint chooses a free service. Free instances can idle and take time to start again, so they are suitable for a demonstration rather than a continuously available monitoring service. For dependable availability, select an appropriate always-on service.
+The app binds to `0.0.0.0` and uses Render's supplied `PORT`. Use a Web Service because the data endpoints run on Node. An included `render.yaml` is also available for a new Blueprint deployment. Free services may idle between visits.
 
-If you are replacing an existing Render app, its connected repository and service settings must point to these files. This ZIP does not modify the existing sea-level analyzer automatically.
+## Check your deployed page
 
-## What is live and what is simulated?
+1. **Real observations** is selected. Green lab markers show sample dates, values, units and source links. The nearest Battery station results are shown below the map.
+2. Orange CSO markers show an outfall ID, permit and receiving water. Their live discharge status is **unknown**.
+3. Switch between water-quality and CSO advisories. DEP advisory regions show provider dates and messages; gray/no advisory does not mean safe.
+4. The NOAA card shows a timestamped water level or an unavailable/stale state.
+5. Stevens sECOM says **NOT CONNECTED** until an actual compatible source is supplied. No current arrows are fabricated in this view.
+6. **Explore scenario** starts the optional illustrative plume. Switch back to observations to hide it. Try layer switches and exports on desktop and mobile.
 
-- **Live when the feed is available:** NOAA Battery water-level observations, with timestamps and status. NOAA may return preliminary or flagged observations.
-- **Predicted by NOAA:** Astronomical tide levels. These are not complete storm-surge predictions.
-- **Simulated:** Flow arrows and relative microbial tracer density, unless an external velocity field is imported. Imported flow still drives an uncalibrated tracer release.
-- **Not included:** Live detection of all pathogens, validated pathogen concentrations, a pluvial/basement flood model, or public-health safety declarations.
+If the service reports a feed outage, the app labels any cached or saved data. It does not invent a fresh measurement.
 
-Open **Data & limits** in the app for these distinctions.
+## To connect sECOM and source loading
 
-## Check that it works
+Send an accessible Stevens sECOM output file or model-data link, together with its grid and variable metadata. We also need outfall discharge time series and microbial source concentrations to predict pathogen movement quantitatively. [docs/STEVENS-AND-SEWER-INPUTS.md](docs/STEVENS-AND-SEWER-INPUTS.md) lists the exact inputs.
 
-Open the Render URL. The map should show the Battery and a hypothetical harbor release. Move the timeline, click Play, change a parameter and click Update scenario. The NOAA card shows water levels if NOAA is reachable. If NOAA is down, it displays unavailable/stale status instead of invented values.
-
-## What you can send later to make this scientifically useful
-
-1. Your professor's hydrodynamic output: time, longitude/latitude, eastward/northward velocity, coordinate system, units, wet/dry mask, and model provenance. NetCDF outputs need a model-specific conversion to the documented JSON format.
-2. Laboratory data: target organism, coordinates, collection timestamp, result, units, assay method, and detection-limit qualifier.
-3. Documented source locations, discharge/load histories, and organism-specific fate parameters.
-4. Independent event samples for validation and uncertainty assessment.
-
-Do not send passwords or private account keys. These research inputs are not needed to launch the demonstration.
-
-Official deployment guide: https://render.com/docs/deploy-node-express-app
+Do not populate `SECOM_FIELD_URL` with a forecast webpage or an arbitrary NetCDF URL. The optional server connector currently expects prepared velocity JSON on a Stevens HTTPS endpoint. No credentials are required for the already connected public sources.

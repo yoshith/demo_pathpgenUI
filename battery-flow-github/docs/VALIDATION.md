@@ -1,18 +1,21 @@
-# Validation performed for version 0.1
+# Validation performed for version 0.2
 
-## Software checks
+## Software and source checks
 
-- Source syntax and referenced local entry assets checked.
-- All 13 automated checks passed: NOAA UTC and quality parsing, censoring preservation, schema validation, interpolation, dry-cell rejection, half-life behavior, reproducibility, cache coalescing, and missing/stale feed behavior.
-- HTTP smoke checks passed for the home page, browser code, bundled mapping library, font asset and health endpoint. Secret-style paths are blocked.
-- The NOAA server integration returned a real Battery observation with timestamp, preliminary quality and flags. Availability is not guaranteed on every request.
-- No duplicate HTML IDs or missing static JavaScript element targets found.
-- Render configuration follows its documented Node web-service and Blueprint settings.
+- All **29 automated checks passed**: NOAA timestamps/flags and stale feeds; DEP missing values, detection limits, opaque flags, coordinate repair and historical lookup provenance; authentic outage snapshots; source response limits; CSO inventory semantics and truncation; advisory date/status behavior; sECOM configuration and time coverage; and the existing interpolation, dry-cell, decay and reproducibility checks.
+- The actual Node server returned HTTP 200 for the home page, health, NOAA, DEP observations, sewer inventory, advisories, sECOM connection status and packaged waterbody boundaries.
+- The live integration returned **102 DEP indicator results**, **313 DEC outfall locations**, and **90 advisory records** (45 WQ and 45 CSO). These were successful upstream responses, not synthetic fixtures or outage fallbacks.
+- The DEP latest collection date was **2025-12-16**. A real NOAA observation and the DEP advisory provider period were returned with their source times.
+- `/api/stevens` returned **not_configured**, correctly containing no numerical field. Test-only synthetic fields exercise the connector contract; they do not demonstrate real sECOM integration.
+- Source syntax, bundled assets and HTML element targets were checked. No duplicate HTML IDs or missing literal JavaScript element targets were found.
+- Render deployment instructions specify the existing repository's `battery-flow-github` root and `npm start` command.
 
-Browser-based visual and interaction QA was not performed in this delivery. After deployment, follow the short interaction checklist in START-HERE.md, especially playback, layer toggles, data import, mobile layout and export.
+Browser visual and interaction QA was not performed. Follow the deployed-page checklist in START-HERE.md for map controls, layer switches, popup visibility, exports, optional playback and mobile layout.
 
-## Scientific validation
+## Scientific scope
 
-None established. Passing software checks does not establish agreement with observed pathogen concentrations. The demo flow mask, transport boundaries, release and biological parameters are illustrative. Imported fields and laboratory results retain provenance but are not scientifically certified by this app.
+No independent scientific validation is established by these software checks. Real source records retain their original limitations: sparse historical samples, older station coordinates, unmeasured outfall discharges, and official rainfall/model-based advisories.
 
-No independent storm validation, pathogen detection accuracy, forecast skill, concentration calibration, or uncertainty guarantee is claimed.
+No numerical sECOM output was obtained. No measured per-outfall discharge hydrographs, microbial source loads, native sewer network, or pluvial coupling model was obtained. The optional tracer release, schematic field, biological parameters and boundary handling remain illustrative.
+
+No live pathogen-detection accuracy, calibrated concentration field, organism-specific transport skill, health-outcome model, or uncertainty guarantee is claimed.

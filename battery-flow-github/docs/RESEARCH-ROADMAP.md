@@ -1,6 +1,6 @@
 # Moving from this prototype to scientific prediction
 
-The current package intentionally separates observed gauge data, hypothetical tracer transport, and imported observations. It provides a UI and small integration contract, not the validated scientific stack.
+Version 0.2 connects NOAA gauge data, dated DEP bacterial samples, DEC outfall locations and official DEP modeled advisories. The optional tracer remains illustrative, and numerical Stevens sECOM output and measured sewer source loading remain to be obtained. See STEVENS-AND-SEWER-INPUTS.md for exact inputs.
 
 ## Inputs to request from the professor
 
@@ -23,9 +23,9 @@ The current package intentionally separates observed gauge data, hypothetical tr
 ## App work after scientific validation
 
 - Scheduled model runs and versioned forecast storage.
-- Provider adapters for NOAA/NYHOPS or the professor's model outputs, with schema and provenance checks.
+- A source-specific adapter for the professor's actual sECOM outputs, with grid, orientation, time and provenance checks.
 - Time-varying wet masks, depth and land-surface deposition for pluvial extensions.
-- Documented source catalogs and lab data ingestion/assimilation.
+- Time-varying source loads and laboratory assimilation beyond the connected station/outfall catalogs.
 - Uncertainty layers and observation-versus-prediction comparison.
 - Model status and outage monitoring, credential handling if needed, data retention/access policies, and sufficient hosting capacity.
 

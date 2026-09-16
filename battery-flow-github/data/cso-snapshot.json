@@ -1,0 +1,6586 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93472365242316,
+          40.82889717300851
+        ]
+      },
+      "properties": {
+        "id": 439,
+        "outfall": "WIM-050",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93305699239478,
+          40.82834161218835
+        ]
+      },
+      "properties": {
+        "id": 441,
+        "outfall": "WIB-062",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93472365313629,
+          40.82834161255232
+        ]
+      },
+      "properties": {
+        "id": 442,
+        "outfall": "WIM-048",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93305699251815,
+          40.8277860625291
+        ]
+      },
+      "properties": {
+        "id": 444,
+        "outfall": "WIB-063",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93444587222149,
+          40.8275082826545
+        ]
+      },
+      "properties": {
+        "id": 445,
+        "outfall": "WIM-047",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95861255003946,
+          40.8258416112337
+        ]
+      },
+      "properties": {
+        "id": 446,
+        "outfall": "NR-056",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93444587291758,
+          40.82473050173865
+        ]
+      },
+      "properties": {
+        "id": 447,
+        "outfall": "WIM-046",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95944587987587,
+          40.82361939095829
+        ]
+      },
+      "properties": {
+        "id": 450,
+        "outfall": "NR-044",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93416810159482,
+          40.822786061545045
+        ]
+      },
+      "properties": {
+        "id": 451,
+        "outfall": "WIM-045",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93222365166542,
+          40.81973050109227
+        ]
+      },
+      "properties": {
+        "id": 452,
+        "outfall": "WIB-064",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93389032206511,
+          40.819452720549464
+        ]
+      },
+      "properties": {
+        "id": 453,
+        "outfall": "WIM-044",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88139030526338,
+          40.81889717238704
+        ]
+      },
+      "properties": {
+        "id": 454,
+        "outfall": "HP-008",
+        "permit": "NY0026191",
+        "receivingWater": "Bronx River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9619458802964,
+          40.818063839535036
+        ]
+      },
+      "properties": {
+        "id": 455,
+        "outfall": "NR-043",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93389032150554,
+          40.8177860607464
+        ]
+      },
+      "properties": {
+        "id": 456,
+        "outfall": "WIM-042",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93389032224019,
+          40.8169527203198
+        ]
+      },
+      "properties": {
+        "id": 457,
+        "outfall": "WIM-041",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93389032139159,
+          40.816119390571956
+        ]
+      },
+      "properties": {
+        "id": 458,
+        "outfall": "WIM-040",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93389032112609,
+          40.81584160975973
+        ]
+      },
+      "properties": {
+        "id": 459,
+        "outfall": "WIM-039",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85527918634396,
+          40.81445272244139
+        ]
+      },
+      "properties": {
+        "id": 461,
+        "outfall": "HP-013",
+        "permit": "NY0026191",
+        "receivingWater": "Pugsley's Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87083474184521,
+          40.81445272225397
+        ]
+      },
+      "properties": {
+        "id": 462,
+        "outfall": "HP-009",
+        "permit": "NY0026191",
+        "receivingWater": "Bronx River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93222365156399,
+          40.81389717022798
+        ]
+      },
+      "properties": {
+        "id": 463,
+        "outfall": "WIB-075",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86972363112912,
+          40.813341611648426
+        ]
+      },
+      "properties": {
+        "id": 465,
+        "outfall": "HP-010",
+        "permit": "NY0026191",
+        "receivingWater": "Bronx River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93416810110527,
+          40.811397169221905
+        ]
+      },
+      "properties": {
+        "id": 469,
+        "outfall": "WIM-038",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93277921158544,
+          40.810841608938695
+        ]
+      },
+      "properties": {
+        "id": 470,
+        "outfall": "WIB-065",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96861255293581,
+          40.809174947377855
+        ]
+      },
+      "properties": {
+        "id": 471,
+        "outfall": "NR-042",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93166810072668,
+          40.80806383884313
+        ]
+      },
+      "properties": {
+        "id": 473,
+        "outfall": "WIB-066",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93305699037663,
+          40.80695271826004
+        ]
+      },
+      "properties": {
+        "id": 474,
+        "outfall": "WIM-037",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8922236377778,
+          40.80639716989858
+        ]
+      },
+      "properties": {
+        "id": 475,
+        "outfall": "HP-025",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93055699047736,
+          40.8063971684909
+        ]
+      },
+      "properties": {
+        "id": 476,
+        "outfall": "WIB-067",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88944585682694,
+          40.80584161006551
+        ]
+      },
+      "properties": {
+        "id": 477,
+        "outfall": "HP-002",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93166810035186,
+          40.80556383859948
+        ]
+      },
+      "properties": {
+        "id": 478,
+        "outfall": "WIM-036",
+        "permit": "NY0026131",
+        "receivingWater": "Harlem River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90222364084701,
+          40.805008279300736
+        ]
+      },
+      "properties": {
+        "id": 479,
+        "outfall": "WIB-072",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97194588371887,
+          40.80473049653267
+        ]
+      },
+      "properties": {
+        "id": 480,
+        "outfall": "NR-041",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85416807528784,
+          40.804452720556796
+        ]
+      },
+      "properties": {
+        "id": 481,
+        "outfall": "HP-011",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "Skimmed/Boomed",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86972362980487,
+          40.80417495026577
+        ]
+      },
+      "properties": {
+        "id": 482,
+        "outfall": "HP-039",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92305698795879,
+          40.80250827790159
+        ]
+      },
+      "properties": {
+        "id": 483,
+        "outfall": "WIB-068",
+        "permit": "NY0026131",
+        "receivingWater": "Bronx Kill",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92166809651413,
+          40.80167494759482
+        ]
+      },
+      "properties": {
+        "id": 484,
+        "outfall": "WIB-073",
+        "permit": "NY0026131",
+        "receivingWater": "Bronx Kill",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.8747236313442,
+          40.80139716899713
+        ]
+      },
+      "properties": {
+        "id": 485,
+        "outfall": "HP-003",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9061125313303,
+          40.801397168325245
+        ]
+      },
+      "properties": {
+        "id": 486,
+        "outfall": "WIB-071",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92916809916706,
+          40.80111938746559
+        ]
+      },
+      "properties": {
+        "id": 487,
+        "outfall": "WIM-035",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92889031888579,
+          40.79973049691283
+        ]
+      },
+      "properties": {
+        "id": 488,
+        "outfall": "WIM-034",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91944586584518,
+          40.79917494700689
+        ]
+      },
+      "properties": {
+        "id": 489,
+        "outfall": "WIB-069",
+        "permit": "NY0026131",
+        "receivingWater": "Bronx Kill",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9083347526588,
+          40.79889716731357
+        ]
+      },
+      "properties": {
+        "id": 490,
+        "outfall": "WIB-070",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92889031907409,
+          40.79834160726619
+        ]
+      },
+      "properties": {
+        "id": 491,
+        "outfall": "WIM-033",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92889031888701,
+          40.797786056719445
+        ]
+      },
+      "properties": {
+        "id": 493,
+        "outfall": "WIM-032",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97722366410031,
+          40.79695271482699
+        ]
+      },
+      "properties": {
+        "id": 494,
+        "outfall": "NR-040",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92916809871556,
+          40.796674946729105
+        ]
+      },
+      "properties": {
+        "id": 495,
+        "outfall": "WIM-031",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92916809844102,
+          40.79611938610955
+        ]
+      },
+      "properties": {
+        "id": 498,
+        "outfall": "WIM-030",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88333474478443,
+          40.79584160766754
+        ]
+      },
+      "properties": {
+        "id": 499,
+        "outfall": "HP-032",
+        "permit": "NY0026191",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93111253934114,
+          40.79417494634098
+        ]
+      },
+      "properties": {
+        "id": 500,
+        "outfall": "WIM-027",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93194586921838,
+          40.79361938597158
+        ]
+      },
+      "properties": {
+        "id": 502,
+        "outfall": "WIM-026",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97972366466216,
+          40.79361938385298
+        ]
+      },
+      "properties": {
+        "id": 503,
+        "outfall": "NR-039",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93277920985844,
+          40.79306383579976
+        ]
+      },
+      "properties": {
+        "id": 504,
+        "outfall": "WIM-025",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93583476125966,
+          40.79111938480504
+        ]
+      },
+      "properties": {
+        "id": 505,
+        "outfall": "WIM-024",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9375014311223,
+          40.78861938453251
+        ]
+      },
+      "properties": {
+        "id": 507,
+        "outfall": "WIM-023",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93777921091679,
+          40.78778605441285
+        ]
+      },
+      "properties": {
+        "id": 508,
+        "outfall": "WIM-022",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93805699093309,
+          40.787230493989334
+        ]
+      },
+      "properties": {
+        "id": 509,
+        "outfall": "WIM-021",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98472366647383,
+          40.786674942472075
+        ]
+      },
+      "properties": {
+        "id": 510,
+        "outfall": "NR-038",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93889032179844,
+          40.786397164056176
+        ]
+      },
+      "properties": {
+        "id": 511,
+        "outfall": "WIM-020",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91555698395604,
+          40.78611938536563
+        ]
+      },
+      "properties": {
+        "id": 512,
+        "outfall": "BB-053",
+        "permit": "NY0026158",
+        "receivingWater": "Hell Gate",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91611253454266,
+          40.7861193851126
+        ]
+      },
+      "properties": {
+        "id": 513,
+        "outfall": "BB-037",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93916810192187,
+          40.7858416043835
+        ]
+      },
+      "properties": {
+        "id": 514,
+        "outfall": "WIM-043",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85972362629714,
+          40.78556383695632
+        ]
+      },
+      "properties": {
+        "id": 515,
+        "outfall": "TI-018",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93972365168263,
+          40.785286053705185
+        ]
+      },
+      "properties": {
+        "id": 516,
+        "outfall": "WIM-019",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94055699176734,
+          40.785008274310364
+        ]
+      },
+      "properties": {
+        "id": 517,
+        "outfall": "WIM-018",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91833475431375,
+          40.783897164213485
+        ]
+      },
+      "properties": {
+        "id": 518,
+        "outfall": "BB-036",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85805696523276,
+          40.78361938680878
+        ]
+      },
+      "properties": {
+        "id": 519,
+        "outfall": "TI-017",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92000142462228,
+          40.78278605426974
+        ]
+      },
+      "properties": {
+        "id": 520,
+        "outfall": "BB-035",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9436125424939,
+          40.78278605366658
+        ]
+      },
+      "properties": {
+        "id": 521,
+        "outfall": "WIM-017",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94389032333862,
+          40.7819527131069
+        ]
+      },
+      "properties": {
+        "id": 523,
+        "outfall": "WIM-016",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85055696343224,
+          40.781674945960916
+        ]
+      },
+      "properties": {
+        "id": 524,
+        "outfall": "TI-016",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9880570072598,
+          40.781674941693275
+        ]
+      },
+      "properties": {
+        "id": 525,
+        "outfall": "NR-037",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85055696300195,
+          40.780286055773054
+        ]
+      },
+      "properties": {
+        "id": 526,
+        "outfall": "TI-015",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.90250141925314,
+          40.78028605416003
+        ]
+      },
+      "properties": {
+        "id": 527,
+        "outfall": "BB-041",
+        "permit": "NY0026158",
+        "receivingWater": "Luyster Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89277919588419,
+          40.779730494172576
+        ]
+      },
+      "properties": {
+        "id": 528,
+        "outfall": "BB-002",
+        "permit": "NY0026158",
+        "receivingWater": "Riker's Island Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94333476249311,
+          40.779730492876524
+        ]
+      },
+      "properties": {
+        "id": 529,
+        "outfall": "WIM-015",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85027918201112,
+          40.778619385524024
+        ]
+      },
+      "properties": {
+        "id": 530,
+        "outfall": "TI-014",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9427792126306,
+          40.77834160215574
+        ]
+      },
+      "properties": {
+        "id": 531,
+        "outfall": "WIM-014",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94250143151145,
+          40.777786052401254
+        ]
+      },
+      "properties": {
+        "id": 532,
+        "outfall": "WIM-013",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99083477745933,
+          40.77750827076391
+        ]
+      },
+      "properties": {
+        "id": 533,
+        "outfall": "NR-046",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92833475805112,
+          40.77695271243201
+        ]
+      },
+      "properties": {
+        "id": 534,
+        "outfall": "BB-034",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89166808576125,
+          40.776674943945274
+        ]
+      },
+      "properties": {
+        "id": 535,
+        "outfall": "BB-003",
+        "permit": "NY0026158",
+        "receivingWater": "Bowery Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93027920785212,
+          40.77639716228112
+        ]
+      },
+      "properties": {
+        "id": 536,
+        "outfall": "BB-045",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94194587170331,
+          40.77639716173392
+        ]
+      },
+      "properties": {
+        "id": 537,
+        "outfall": "WIM-012",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9369458696659,
+          40.775841602398934
+        ]
+      },
+      "properties": {
+        "id": 538,
+        "outfall": "BB-033",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93777921097066,
+          40.774452712110914
+        ]
+      },
+      "properties": {
+        "id": 539,
+        "outfall": "BB-032",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94333476223058,
+          40.77417494134836
+        ]
+      },
+      "properties": {
+        "id": 540,
+        "outfall": "WIM-011",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99611255935737,
+          40.773897159827676
+        ]
+      },
+      "properties": {
+        "id": 541,
+        "outfall": "NR-036",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.88944585494218,
+          40.773619383499366
+        ]
+      },
+      "properties": {
+        "id": 542,
+        "outfall": "BB-005",
+        "permit": "NY0026158",
+        "receivingWater": "Bowery Bay",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94444587261403,
+          40.77306383111385
+        ]
+      },
+      "properties": {
+        "id": 543,
+        "outfall": "WIM-010",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94500143222916,
+          40.7725082714512
+        ]
+      },
+      "properties": {
+        "id": 544,
+        "outfall": "WIM-009",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85027918253542,
+          40.77167494416658
+        ]
+      },
+      "properties": {
+        "id": 545,
+        "outfall": "TI-012",
+        "permit": "NY0026239",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93500142985802,
+          40.771119381410095
+        ]
+      },
+      "properties": {
+        "id": 546,
+        "outfall": "BB-030",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99527922877458,
+          40.771119379137616
+        ]
+      },
+      "properties": {
+        "id": 547,
+        "outfall": "NR-035",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9475014336467,
+          40.77028605092347
+        ]
+      },
+      "properties": {
+        "id": 548,
+        "outfall": "WIM-008",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94805699331354,
+          40.76945271098607
+        ]
+      },
+      "properties": {
+        "id": 549,
+        "outfall": "WIM-007",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94861254301081,
+          40.76889716033849
+        ]
+      },
+      "properties": {
+        "id": 550,
+        "outfall": "WIM-006",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93777920969669,
+          40.76861938037579
+        ]
+      },
+      "properties": {
+        "id": 551,
+        "outfall": "BB-029",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95889032647254,
+          40.76861938033277
+        ]
+      },
+      "properties": {
+        "id": 552,
+        "outfall": "BB-054",
+        "permit": "NY0026158",
+        "receivingWater": "East Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99777922971649,
+          40.76861937831888
+        ]
+      },
+      "properties": {
+        "id": 553,
+        "outfall": "NR-034",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94916810365063,
+          40.768341600727936
+        ]
+      },
+      "properties": {
+        "id": 554,
+        "outfall": "WIM-005",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94944587413747,
+          40.76750827038507
+        ]
+      },
+      "properties": {
+        "id": 555,
+        "outfall": "WIM-004",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95000143381996,
+          40.76695271016742
+        ]
+      },
+      "properties": {
+        "id": 556,
+        "outfall": "WIM-003",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86277918534347,
+          40.76639716290591
+        ]
+      },
+      "properties": {
+        "id": 557,
+        "outfall": "BB-007",
+        "permit": "NY0026158",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95055699348507,
+          40.76639715980454
+        ]
+      },
+      "properties": {
+        "id": 558,
+        "outfall": "WIM-002",
+        "permit": "NY0026131",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99750144943708,
+          40.766397158020645
+        ]
+      },
+      "properties": {
+        "id": 559,
+        "outfall": "NR-051",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99805700891753,
+          40.76611937779602
+        ]
+      },
+      "properties": {
+        "id": 560,
+        "outfall": "NR-033",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96166810808312,
+          40.765841599192136
+        ]
+      },
+      "properties": {
+        "id": 562,
+        "outfall": "BB-055",
+        "permit": "NY0026158",
+        "receivingWater": "East Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99944588946187,
+          40.76584159848113
+        ]
+      },
+      "properties": {
+        "id": 563,
+        "outfall": "NR-032",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95166810389627,
+          40.76528604982669
+        ]
+      },
+      "properties": {
+        "id": 564,
+        "outfall": "NCM-030",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99861255899789,
+          40.765008267972554
+        ]
+      },
+      "properties": {
+        "id": 565,
+        "outfall": "NR-047",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9522236539268,
+          40.76445270945683
+        ]
+      },
+      "properties": {
+        "id": 566,
+        "outfall": "NCM-031",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00083477961697,
+          40.76389715749602
+        ]
+      },
+      "properties": {
+        "id": 568,
+        "outfall": "NR-031",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00361256082795,
+          40.76361937737155
+        ]
+      },
+      "properties": {
+        "id": 569,
+        "outfall": "NR-030",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85972362497718,
+          40.76223049234683
+        ]
+      },
+      "properties": {
+        "id": 571,
+        "outfall": "BB-008",
+        "permit": "NY0026158",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00194589029381,
+          40.76223048716846
+        ]
+      },
+      "properties": {
+        "id": 572,
+        "outfall": "NR-048",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94583476191133,
+          40.76139715945703
+        ]
+      },
+      "properties": {
+        "id": 574,
+        "outfall": "BB-028",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00277922990165,
+          40.761119376606636
+        ]
+      },
+      "properties": {
+        "id": 575,
+        "outfall": "NR-029",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.85666807392425,
+          40.760841601766636
+        ]
+      },
+      "properties": {
+        "id": 576,
+        "outfall": "BB-006",
+        "permit": "NY0026158",
+        "receivingWater": "Flushing Bay",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94694587277347,
+          40.76028604897422
+        ]
+      },
+      "properties": {
+        "id": 577,
+        "outfall": "BB-027",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95722365561616,
+          40.76000826871472
+        ]
+      },
+      "properties": {
+        "id": 578,
+        "outfall": "NCM-005",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95750143636053,
+          40.759452708445544
+        ]
+      },
+      "properties": {
+        "id": 579,
+        "outfall": "NCM-032",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00666812207906,
+          40.759452706471734
+        ]
+      },
+      "properties": {
+        "id": 580,
+        "outfall": "NR-028",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95972365577306,
+          40.756952707964125
+        ]
+      },
+      "properties": {
+        "id": 581,
+        "outfall": "NCM-033",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00583478136768,
+          40.75667493583532
+        ]
+      },
+      "properties": {
+        "id": 582,
+        "outfall": "NR-052",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95083476363367,
+          40.756119377681635
+        ]
+      },
+      "properties": {
+        "id": 584,
+        "outfall": "BB-025",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9613903266242,
+          40.75500826743734
+        ]
+      },
+      "properties": {
+        "id": 586,
+        "outfall": "NCM-034",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96222365714698,
+          40.75473048708657
+        ]
+      },
+      "properties": {
+        "id": 587,
+        "outfall": "NCM-035",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00722367100661,
+          40.754730485853756
+        ]
+      },
+      "properties": {
+        "id": 588,
+        "outfall": "NR-027",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9525014341267,
+          40.753897157783825
+        ]
+      },
+      "properties": {
+        "id": 589,
+        "outfall": "BB-024",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95722365480798,
+          40.75278604676276
+        ]
+      },
+      "properties": {
+        "id": 590,
+        "outfall": "BB-056",
+        "permit": "NY0026158",
+        "receivingWater": "East Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00944589190294,
+          40.752508265393935
+        ]
+      },
+      "properties": {
+        "id": 591,
+        "outfall": "NR-026",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96416810800389,
+          40.75223048699098
+        ]
+      },
+      "properties": {
+        "id": 592,
+        "outfall": "NCM-036",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96472365822183,
+          40.75167493645145
+        ]
+      },
+      "properties": {
+        "id": 593,
+        "outfall": "NCM-011",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01083478238324,
+          40.75084159449673
+        ]
+      },
+      "properties": {
+        "id": 594,
+        "outfall": "NR-025",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96583476808904,
+          40.75028604649975
+        ]
+      },
+      "properties": {
+        "id": 595,
+        "outfall": "NCM-016",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95555699480485,
+          40.74945270678124
+        ]
+      },
+      "properties": {
+        "id": 596,
+        "outfall": "BB-023",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95527921417116,
+          40.748063826109096
+        ]
+      },
+      "properties": {
+        "id": 597,
+        "outfall": "BB-022",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96777921810843,
+          40.748063825822314
+        ]
+      },
+      "properties": {
+        "id": 598,
+        "outfall": "NCM-017",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01139034254277,
+          40.74778604447116
+        ]
+      },
+      "properties": {
+        "id": 599,
+        "outfall": "NR-024",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96833476879645,
+          40.74723048544977
+        ]
+      },
+      "properties": {
+        "id": 600,
+        "outfall": "NCM-018",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96833476879645,
+          40.74723048544977
+        ]
+      },
+      "properties": {
+        "id": 601,
+        "outfall": "NCM-037",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95916810551448,
+          40.74639715571322
+        ]
+      },
+      "properties": {
+        "id": 602,
+        "outfall": "BB-021",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01139034232193,
+          40.74584159329184
+        ]
+      },
+      "properties": {
+        "id": 603,
+        "outfall": "NR-023",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96972365861825,
+          40.745563825224245
+        ]
+      },
+      "properties": {
+        "id": 604,
+        "outfall": "NCM-038",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97000143869813,
+          40.74556382467986
+        ]
+      },
+      "properties": {
+        "id": 605,
+        "outfall": "NCM-038A",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97027921873472,
+          40.74500826509575
+        ]
+      },
+      "properties": {
+        "id": 606,
+        "outfall": "NCM-039",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95944587568292,
+          40.74445270562879
+        ]
+      },
+      "properties": {
+        "id": 607,
+        "outfall": "BB-018",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97083476952129,
+          40.74445270483055
+        ]
+      },
+      "properties": {
+        "id": 608,
+        "outfall": "NCM-040",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00889034081722,
+          40.744452703310834
+        ]
+      },
+      "properties": {
+        "id": 609,
+        "outfall": "NR-022",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9602792152252,
+          40.7436193748764
+        ]
+      },
+      "properties": {
+        "id": 610,
+        "outfall": "BB-017",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94027920887007,
+          40.74306382595659
+        ]
+      },
+      "properties": {
+        "id": 611,
+        "outfall": "BB-026",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96111254619512,
+          40.742508264962844
+        ]
+      },
+      "properties": {
+        "id": 612,
+        "outfall": "BB-057",
+        "permit": "NY0026158",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9716681090117,
+          40.74250826422534
+        ]
+      },
+      "properties": {
+        "id": 613,
+        "outfall": "NCM-041",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00916812111738,
+          40.74250826358403
+        ]
+      },
+      "properties": {
+        "id": 614,
+        "outfall": "NR-049",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94083475985292,
+          40.74084159549678
+        ]
+      },
+      "properties": {
+        "id": 615,
+        "outfall": "BB-040",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01111256176304,
+          40.74084159312039
+        ]
+      },
+      "properties": {
+        "id": 616,
+        "outfall": "NR-050",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9411125394343,
+          40.74056382506865
+        ]
+      },
+      "properties": {
+        "id": 617,
+        "outfall": "BB-009",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97222365912239,
+          40.740008263568974
+        ]
+      },
+      "properties": {
+        "id": 618,
+        "outfall": "NCM-043",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95500143371483,
+          40.73973048456523
+        ]
+      },
+      "properties": {
+        "id": 619,
+        "outfall": "BB-014",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9422236492506,
+          40.73945270485668
+        ]
+      },
+      "properties": {
+        "id": 620,
+        "outfall": "BB-010",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95222365348302,
+          40.739452704282314
+        ]
+      },
+      "properties": {
+        "id": 621,
+        "outfall": "BB-043",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95277921322477,
+          40.73945270464759
+        ]
+      },
+      "properties": {
+        "id": 622,
+        "outfall": "BB-013",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95777921490647,
+          40.73945270434223
+        ]
+      },
+      "properties": {
+        "id": 623,
+        "outfall": "BB-015",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97250143924637,
+          40.73945270339065
+        ]
+      },
+      "properties": {
+        "id": 624,
+        "outfall": "NCM-044",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01139034125849,
+          40.73917493202143
+        ]
+      },
+      "properties": {
+        "id": 625,
+        "outfall": "NR-021",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94277921013732,
+          40.738897154633364
+        ]
+      },
+      "properties": {
+        "id": 626,
+        "outfall": "BB-004",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95277921312798,
+          40.73889715427469
+        ]
+      },
+      "properties": {
+        "id": 627,
+        "outfall": "NCB-021",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95305699364799,
+          40.73889715480393
+        ]
+      },
+      "properties": {
+        "id": 628,
+        "outfall": "NCB-022",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94527921092886,
+          40.7383415943642
+        ]
+      },
+      "properties": {
+        "id": 629,
+        "outfall": "BB-042",
+        "permit": "NY0026158",
+        "receivingWater": "Dutch Kills",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01111256190599,
+          40.738341592261115
+        ]
+      },
+      "properties": {
+        "id": 630,
+        "outfall": "NR-020",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.972501439404,
+          40.73695270369898
+        ]
+      },
+      "properties": {
+        "id": 631,
+        "outfall": "NCM-045",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95972343476473,
+          40.73695226348884
+        ]
+      },
+      "properties": {
+        "id": 632,
+        "outfall": "NCB-082",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.95972343476473,
+          40.73695226348884
+        ]
+      },
+      "properties": {
+        "id": 633,
+        "outfall": "NCB-084",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97277921921696,
+          40.73639715332648
+        ]
+      },
+      "properties": {
+        "id": 634,
+        "outfall": "NCM-046",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01055701164839,
+          40.736397152027
+        ]
+      },
+      "properties": {
+        "id": 635,
+        "outfall": "NR-019",
+        "permit": "NY0026247",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96111254506177,
+          40.73556382337223
+        ]
+      },
+      "properties": {
+        "id": 636,
+        "outfall": "NCB-024",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97444588006739,
+          40.73528604293564
+        ]
+      },
+      "properties": {
+        "id": 637,
+        "outfall": "NCM-047",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97416810974211,
+          40.73445270262047
+        ]
+      },
+      "properties": {
+        "id": 638,
+        "outfall": "NCM-087",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94139031916211,
+          40.73417493365613
+        ]
+      },
+      "properties": {
+        "id": 639,
+        "outfall": "BB-012",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96222365588842,
+          40.73389715269666
+        ]
+      },
+      "properties": {
+        "id": 640,
+        "outfall": "NCB-025",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.94000142917673,
+          40.73361937342467
+        ]
+      },
+      "properties": {
+        "id": 641,
+        "outfall": "BB-011",
+        "permit": "NY0026158",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01083478175845,
+          40.733341591562656
+        ]
+      },
+      "properties": {
+        "id": 642,
+        "outfall": "NCM-081",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96222365542803,
+          40.73306382280813
+        ]
+      },
+      "properties": {
+        "id": 643,
+        "outfall": "NCB-026",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97361254882982,
+          40.73306382274711
+        ]
+      },
+      "properties": {
+        "id": 644,
+        "outfall": "NCM-048",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96194543527281,
+          40.73223026274864
+        ]
+      },
+      "properties": {
+        "id": 645,
+        "outfall": "NCB-088",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97361254971848,
+          40.73139715182856
+        ]
+      },
+      "properties": {
+        "id": 646,
+        "outfall": "NCM-049",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01416812184351,
+          40.730008260326095
+        ]
+      },
+      "properties": {
+        "id": 647,
+        "outfall": "NCM-076",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96111254493536,
+          40.72945270234416
+        ]
+      },
+      "properties": {
+        "id": 648,
+        "outfall": "NCB-003",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01139034131614,
+          40.7272304800541
+        ]
+      },
+      "properties": {
+        "id": 649,
+        "outfall": "NCM-080",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92722364424063,
+          40.726674933288535
+        ]
+      },
+      "properties": {
+        "id": 650,
+        "outfall": "NCQ-029",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97166810888986,
+          40.72667493104338
+        ]
+      },
+      "properties": {
+        "id": 651,
+        "outfall": "NCM-052",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96166810487894,
+          40.72584159126386
+        ]
+      },
+      "properties": {
+        "id": 652,
+        "outfall": "NCB-004",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96194587557738,
+          40.72528604166747
+        ]
+      },
+      "properties": {
+        "id": 653,
+        "outfall": "NCB-006",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "Skimmed/Boomed",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01194589099619,
+          40.72473047941857
+        ]
+      },
+      "properties": {
+        "id": 654,
+        "outfall": "NCM-075",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9722236581189,
+          40.72445270079344
+        ]
+      },
+      "properties": {
+        "id": 655,
+        "outfall": "NCM-053",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9202792014539,
+          40.72361937275712
+        ]
+      },
+      "properties": {
+        "id": 656,
+        "outfall": "NCQ-077",
+        "permit": "NY0026204",
+        "receivingWater": "Maspeth Creek",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01222367164394,
+          40.72306381963636
+        ]
+      },
+      "properties": {
+        "id": 657,
+        "outfall": "NCM-074",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97250143829918,
+          40.72250826024731
+        ]
+      },
+      "properties": {
+        "id": 658,
+        "outfall": "NCM-054",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97277921816273,
+          40.72139715039574
+        ]
+      },
+      "properties": {
+        "id": 659,
+        "outfall": "NCM-055",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96444587537458,
+          40.72000825997902
+        ]
+      },
+      "properties": {
+        "id": 660,
+        "outfall": "NCB-007",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97361254825064,
+          40.71889714956149
+        ]
+      },
+      "properties": {
+        "id": 661,
+        "outfall": "NCM-056",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9736125480295,
+          40.71861936999172
+        ]
+      },
+      "properties": {
+        "id": 662,
+        "outfall": "NCM-020",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0166681227934,
+          40.71861936865392
+        ]
+      },
+      "properties": {
+        "id": 663,
+        "outfall": "NCM-073",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9669458759134,
+          40.718341589719685
+        ]
+      },
+      "properties": {
+        "id": 664,
+        "outfall": "NCB-008",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97416810897855,
+          40.71723047956818
+        ]
+      },
+      "properties": {
+        "id": 665,
+        "outfall": "NCM-057",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96722365617201,
+          40.71639714947607
+        ]
+      },
+      "properties": {
+        "id": 666,
+        "outfall": "NCB-010",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97444587843012,
+          40.71584158926448
+        ]
+      },
+      "properties": {
+        "id": 667,
+        "outfall": "NCM-058",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97500143885934,
+          40.715008259001365
+        ]
+      },
+      "properties": {
+        "id": 668,
+        "outfall": "NCM-028",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01750145264778,
+          40.71500825761671
+        ]
+      },
+      "properties": {
+        "id": 669,
+        "outfall": "NCM-072",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.92389031202566,
+          40.714174930451364
+        ]
+      },
+      "properties": {
+        "id": 670,
+        "outfall": "NCB-019",
+        "permit": "NY0026204",
+        "receivingWater": "Newtown Creek",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97555699855897,
+          40.71361936895812
+        ]
+      },
+      "properties": {
+        "id": 671,
+        "outfall": "NCM-042",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96833476613283,
+          40.71278603873348
+        ]
+      },
+      "properties": {
+        "id": 672,
+        "outfall": "NCB-012",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97611254929683,
+          40.71250825836508
+        ]
+      },
+      "properties": {
+        "id": 673,
+        "outfall": "NCM-059",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97805699941772,
+          40.71056381772244
+        ]
+      },
+      "properties": {
+        "id": 674,
+        "outfall": "NCM-060",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98055700020583,
+          40.71028603825694
+        ]
+      },
+      "properties": {
+        "id": 675,
+        "outfall": "NCM-061",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98389033115984,
+          40.70973047796781
+        ]
+      },
+      "properties": {
+        "id": 676,
+        "outfall": "NCM-062",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01833478197445,
+          40.7097304765527
+        ]
+      },
+      "properties": {
+        "id": 677,
+        "outfall": "NCM-071",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9883347728218,
+          40.70917492735256
+        ]
+      },
+      "properties": {
+        "id": 678,
+        "outfall": "NCM-063",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99389033424416,
+          40.709174926714645
+        ]
+      },
+      "properties": {
+        "id": 679,
+        "outfall": "NCM-064",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99639033499979,
+          40.7088971470296
+        ]
+      },
+      "properties": {
+        "id": 680,
+        "outfall": "NCM-065",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.93111253404166,
+          40.7086193696422
+        ]
+      },
+      "properties": {
+        "id": 681,
+        "outfall": "NCB-015",
+        "permit": "NY0026204",
+        "receivingWater": "English Kills",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99889033590733,
+          40.70806381720526
+        ]
+      },
+      "properties": {
+        "id": 682,
+        "outfall": "NCM-066",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99944588599901,
+          40.707786036787205
+        ]
+      },
+      "properties": {
+        "id": 683,
+        "outfall": "NCM-078",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96916810658212,
+          40.70695269784699
+        ]
+      },
+      "properties": {
+        "id": 684,
+        "outfall": "NCB-013",
+        "permit": "NY0026204",
+        "receivingWater": "Wallabout Channel",
+        "treatmentReported": "Skimmed/Boomed",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96916810592504,
+          40.70611936750914
+        ]
+      },
+      "properties": {
+        "id": 685,
+        "outfall": "NCB-014",
+        "permit": "NY0026204",
+        "receivingWater": "Wallabout Channel",
+        "treatmentReported": "Skimmed/Boomed",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98139033066822,
+          40.705841586606475
+        ]
+      },
+      "properties": {
+        "id": 686,
+        "outfall": "RH-003",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98111255035342,
+          40.70556381679145
+        ]
+      },
+      "properties": {
+        "id": 687,
+        "outfall": "RH-002",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98250144021925,
+          40.70556381713378
+        ]
+      },
+      "properties": {
+        "id": 688,
+        "outfall": "RH-005",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98750144246064,
+          40.7052860368668
+        ]
+      },
+      "properties": {
+        "id": 689,
+        "outfall": "RH-006",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01916812221513,
+          40.70528603588344
+        ]
+      },
+      "properties": {
+        "id": 690,
+        "outfall": "NCM-070",
+        "permit": "NY0026204",
+        "receivingWater": "Hudson River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98972366299118,
+          40.70500825687639
+        ]
+      },
+      "properties": {
+        "id": 691,
+        "outfall": "RH-008",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00444588695619,
+          40.70500825631635
+        ]
+      },
+      "properties": {
+        "id": 692,
+        "outfall": "NCM-067",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98833477259205,
+          40.70445269617357
+        ]
+      },
+      "properties": {
+        "id": 693,
+        "outfall": "RH-007",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99055700307838,
+          40.70445269676649
+        ]
+      },
+      "properties": {
+        "id": 694,
+        "outfall": "RH-009",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.97750143895114,
+          40.703341586919045
+        ]
+      },
+      "properties": {
+        "id": 695,
+        "outfall": "RH-040",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99583477519587,
+          40.70306381565706
+        ]
+      },
+      "properties": {
+        "id": 696,
+        "outfall": "RH-012",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00555700785326,
+          40.7030638156467
+        ]
+      },
+      "properties": {
+        "id": 697,
+        "outfall": "NCM-051",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00944588872062,
+          40.70195269474221
+        ]
+      },
+      "properties": {
+        "id": 698,
+        "outfall": "NCM-068",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01111255995527,
+          40.70139714522477
+        ]
+      },
+      "properties": {
+        "id": 699,
+        "outfall": "NCM-069",
+        "permit": "NY0026204",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01389034009674,
+          40.70000825501586
+        ]
+      },
+      "properties": {
+        "id": 700,
+        "outfall": "RH-010",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00083477609874,
+          40.696119364764684
+        ]
+      },
+      "properties": {
+        "id": 701,
+        "outfall": "RH-011",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00111255527082,
+          40.6941749241742
+        ]
+      },
+      "properties": {
+        "id": 702,
+        "outfall": "RH-013",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00083477567232,
+          40.69139714297901
+        ]
+      },
+      "properties": {
+        "id": 703,
+        "outfall": "RH-014",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00083477512149,
+          40.69056381282596
+        ]
+      },
+      "properties": {
+        "id": 704,
+        "outfall": "RH-016",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00416811681924,
+          40.688897142440545
+        ]
+      },
+      "properties": {
+        "id": 705,
+        "outfall": "RH-018",
+        "permit": "NY0027073",
+        "receivingWater": "East River",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00750144770282,
+          40.68695269231507
+        ]
+      },
+      "properties": {
+        "id": 706,
+        "outfall": "RH-021",
+        "permit": "NY0027073",
+        "receivingWater": "Buttermilk Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00555700644726,
+          40.68667492268788
+        ]
+      },
+      "properties": {
+        "id": 707,
+        "outfall": "RH-020",
+        "permit": "NY0027073",
+        "receivingWater": "Buttermilk Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00805700803133,
+          40.68639714232537
+        ]
+      },
+      "properties": {
+        "id": 708,
+        "outfall": "RH-019",
+        "permit": "NY0027073",
+        "receivingWater": "Buttermilk Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00972366838066,
+          40.683341581768964
+        ]
+      },
+      "properties": {
+        "id": 709,
+        "outfall": "RH-022",
+        "permit": "NY0027073",
+        "receivingWater": "Atlantic Basin",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01055700768886,
+          40.68250825157758
+        ]
+      },
+      "properties": {
+        "id": 710,
+        "outfall": "RH-023",
+        "permit": "NY0027073",
+        "receivingWater": "Atlantic Basin",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98694588011885,
+          40.681674922421166
+        ]
+      },
+      "properties": {
+        "id": 711,
+        "outfall": "RH-034",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01194588826928,
+          40.68139714091889
+        ]
+      },
+      "properties": {
+        "id": 712,
+        "outfall": "RH-024",
+        "permit": "NY0027073",
+        "receivingWater": "Atlantic Basin",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98722366101943,
+          40.68084158193953
+        ]
+      },
+      "properties": {
+        "id": 713,
+        "outfall": "RH-038",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01305700883385,
+          40.68056381085114
+        ]
+      },
+      "properties": {
+        "id": 714,
+        "outfall": "RH-025",
+        "permit": "NY0027073",
+        "receivingWater": "Atlantic Basin",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01777922988637,
+          40.68056381099596
+        ]
+      },
+      "properties": {
+        "id": 715,
+        "outfall": "RH-028",
+        "permit": "NY0027073",
+        "receivingWater": "Buttermilk Channel",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98777922060982,
+          40.68000825139552
+        ]
+      },
+      "properties": {
+        "id": 716,
+        "outfall": "RH-037",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98861255133764,
+          40.67889714145466
+        ]
+      },
+      "properties": {
+        "id": 717,
+        "outfall": "RH-036",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98889044034864,
+          40.67806425144742
+        ]
+      },
+      "properties": {
+        "id": 718,
+        "outfall": "RH-041",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99250144203477,
+          40.67611936056389
+        ]
+      },
+      "properties": {
+        "id": 719,
+        "outfall": "RH-035",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9908347710787,
+          40.67556381079091
+        ]
+      },
+      "properties": {
+        "id": 720,
+        "outfall": "OH-007",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0172236694161,
+          40.673619359580954
+        ]
+      },
+      "properties": {
+        "id": 721,
+        "outfall": "RH-029",
+        "permit": "NY0027073",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.99889033408255,
+          40.67139713940544
+        ]
+      },
+      "properties": {
+        "id": 722,
+        "outfall": "RH-031",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00694588601193,
+          40.6686193583775
+        ]
+      },
+      "properties": {
+        "id": 723,
+        "outfall": "RH-030A",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00722366635378,
+          40.66861935912845
+        ]
+      },
+      "properties": {
+        "id": 724,
+        "outfall": "RH-030",
+        "permit": "NY0027073",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00055700402902,
+          40.66750824872225
+        ]
+      },
+      "properties": {
+        "id": 725,
+        "outfall": "OH-006",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01639033911843,
+          40.66417491769822
+        ]
+      },
+      "properties": {
+        "id": 726,
+        "outfall": "OH-026",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0002792241824,
+          40.663619357581844
+        ]
+      },
+      "properties": {
+        "id": 727,
+        "outfall": "OH-024",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00639033553188,
+          40.661952687694644
+        ]
+      },
+      "properties": {
+        "id": 730,
+        "outfall": "OH-025",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.00805700649084,
+          40.660008246597044
+        ]
+      },
+      "properties": {
+        "id": 732,
+        "outfall": "OH-022",
+        "permit": "NY0026166",
+        "receivingWater": "Gowanus Canal",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.86222361868411,
+          40.65778603171703
+        ]
+      },
+      "properties": {
+        "id": 733,
+        "outfall": "26W-005",
+        "permit": "NY0026212",
+        "receivingWater": "Old Mill Creek",
+        "treatmentReported": "Overflow Retention/Settling",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.01694588895917,
+          40.65556380618047
+        ]
+      },
+      "properties": {
+        "id": 734,
+        "outfall": "OH-004",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.87972362400937,
+          40.65445269027168
+        ]
+      },
+      "properties": {
+        "id": 735,
+        "outfall": "26W-004",
+        "permit": "NY0026212",
+        "receivingWater": "Hendrix Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.02139034019034,
+          40.65278602510216
+        ]
+      },
+      "properties": {
+        "id": 736,
+        "outfall": "OH-003",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.89055696781574,
+          40.64917491941727
+        ]
+      },
+      "properties": {
+        "id": 737,
+        "outfall": "26W-003",
+        "permit": "NY0026212",
+        "receivingWater": "Fresh Basin Creek",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.08444590978907,
+          40.64861935189221
+        ]
+      },
+      "properties": {
+        "id": 738,
+        "outfall": "PR-010",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0897236910057,
+          40.64750824160138
+        ]
+      },
+      "properties": {
+        "id": 741,
+        "outfall": "PR-009",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.09361258288595,
+          40.64611935114204
+        ]
+      },
+      "properties": {
+        "id": 742,
+        "outfall": "PR-008",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07555702676969,
+          40.64584157179046
+        ]
+      },
+      "properties": {
+        "id": 743,
+        "outfall": "PR-011",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10472369546184,
+          40.64584157049442
+        ]
+      },
+      "properties": {
+        "id": 744,
+        "outfall": "PR-005",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1072236963592,
+          40.64584157066885
+        ]
+      },
+      "properties": {
+        "id": 745,
+        "outfall": "PR-004",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.10250147569073,
+          40.645563800982124
+        ]
+      },
+      "properties": {
+        "id": 746,
+        "outfall": "PR-007",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0988903639325,
+          40.64528602109185
+        ]
+      },
+      "properties": {
+        "id": 747,
+        "outfall": "PR-006",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.03139034248672,
+          40.644174913289845
+        ]
+      },
+      "properties": {
+        "id": 748,
+        "outfall": "OH-002",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "Skimmed/Boomed",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11333480911384,
+          40.64389713035127
+        ]
+      },
+      "properties": {
+        "id": 749,
+        "outfall": "PR-033",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.11444591871489,
+          40.64361934978678
+        ]
+      },
+      "properties": {
+        "id": 750,
+        "outfall": "PR-034",
+        "permit": "NY0026107",
+        "receivingWater": "Kill Van Kull",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.03666812374063,
+          40.63917491178437
+        ]
+      },
+      "properties": {
+        "id": 760,
+        "outfall": "OH-020",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07361257524428,
+          40.63750824005231
+        ]
+      },
+      "properties": {
+        "id": 762,
+        "outfall": "PR-013",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.03777923354704,
+          40.636952681267374
+        ]
+      },
+      "properties": {
+        "id": 764,
+        "outfall": "OH-019",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07305702551882,
+          40.63556379977945
+        ]
+      },
+      "properties": {
+        "id": 765,
+        "outfall": "PR-032",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91694585567525,
+          40.63195268446627
+        ]
+      },
+      "properties": {
+        "id": 766,
+        "outfall": "CI-005",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91750141489923,
+          40.631674914794814
+        ]
+      },
+      "properties": {
+        "id": 767,
+        "outfall": "CI-004",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.04027923463136,
+          40.631674909954924
+        ]
+      },
+      "properties": {
+        "id": 768,
+        "outfall": "OH-018",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.9172236354228,
+          40.63111935450169
+        ]
+      },
+      "properties": {
+        "id": 769,
+        "outfall": "CI-006",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07305702449817,
+          40.63056379882493
+        ]
+      },
+      "properties": {
+        "id": 770,
+        "outfall": "PR-014",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91583441455445,
+          40.6300082443914
+        ]
+      },
+      "properties": {
+        "id": 771,
+        "outfall": "CI-008A",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Overflow Retention/Settling",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91583441455445,
+          40.6300082443914
+        ]
+      },
+      "properties": {
+        "id": 772,
+        "outfall": "CI-008B",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Overflow Retention/Settling",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91583441455445,
+          40.6300082443914
+        ]
+      },
+      "properties": {
+        "id": 773,
+        "outfall": "CI-008C",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Overflow Retention/Settling",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.91583441455445,
+          40.6300082443914
+        ]
+      },
+      "properties": {
+        "id": 774,
+        "outfall": "CI-008D",
+        "permit": "NY0026182",
+        "receivingWater": "Paerdegat Basin",
+        "treatmentReported": "Overflow Retention/Settling",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07277924500423,
+          40.62695267852992
+        ]
+      },
+      "properties": {
+        "id": 775,
+        "outfall": "PR-031",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07222368465453,
+          40.62556379779641
+        ]
+      },
+      "properties": {
+        "id": 776,
+        "outfall": "PR-015",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07222368465453,
+          40.62556379779641
+        ]
+      },
+      "properties": {
+        "id": 777,
+        "outfall": "PR-016",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.07055702379661,
+          40.6227860179318
+        ]
+      },
+      "properties": {
+        "id": 778,
+        "outfall": "PR-017",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.04166812466416,
+          40.62056379799829
+        ]
+      },
+      "properties": {
+        "id": 779,
+        "outfall": "OH-017",
+        "permit": "NY0026166",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06777924310472,
+          40.6200082372302
+        ]
+      },
+      "properties": {
+        "id": 780,
+        "outfall": "PR-018",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06666813263585,
+          40.619174907169686
+        ]
+      },
+      "properties": {
+        "id": 781,
+        "outfall": "PR-019",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06611257196687,
+          40.61861934670943
+        ]
+      },
+      "properties": {
+        "id": 782,
+        "outfall": "PR-030",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06416813180225,
+          40.61695267699859
+        ]
+      },
+      "properties": {
+        "id": 783,
+        "outfall": "PR-020",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06277924121399,
+          40.61556379597585
+        ]
+      },
+      "properties": {
+        "id": 784,
+        "outfall": "PR-021",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06027923995445,
+          40.61195267533597
+        ]
+      },
+      "properties": {
+        "id": 785,
+        "outfall": "PR-023A",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06055702015291,
+          40.61195267586789
+        ]
+      },
+      "properties": {
+        "id": 786,
+        "outfall": "PR-023",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.06055702015291,
+          40.61195267586789
+        ]
+      },
+      "properties": {
+        "id": 787,
+        "outfall": "PR-023B",
+        "permit": "NY0026107",
+        "receivingWater": "Upper New York Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0104181135167,
+          40.60056379525724
+        ]
+      },
+      "properties": {
+        "id": 788,
+        "outfall": "OH-015",
+        "permit": "NY0026166",
+        "receivingWater": "Gravesend Bay",
+        "treatmentReported": "None",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.98389032330014,
+          40.58334156260344
+        ]
+      },
+      "properties": {
+        "id": 789,
+        "outfall": "OH-021",
+        "permit": "NY0026166",
+        "receivingWater": "Coney Island Creek",
+        "treatmentReported": "Boom",
+        "recordType": "CSO outfall inventory",
+        "dischargeStatus": "Unknown; this inventory has no live discharge observations",
+        "dischargeRate": null,
+        "pathogenLoad": null
+      }
+    }
+  ],
+  "count": 313,
+  "source": "https://data.gis.ny.gov/datasets/nysdec::combined-sewer-overflow-cso-outfalls/about",
+  "queryUrl": "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Combined_Sewer_Overflow__CSO__Outfalls/FeatureServer/20/query?where=1%3D1&geometry=-74.12%2C40.58%2C-73.85%2C40.83&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outSR=4326&outFields=OBJECTID%2CSPDES_PERMIT_NUMBER%2COUTFALL_NUMBER%2CRECEIVING_WATERBODY_NAME%2CTREATMENT&returnGeometry=true&resultRecordCount=2000&f=json",
+  "sourceDataEditedAt": "2025-11-18T20:19:12.767Z",
+  "coverage": "NYS DEC CSO inventory within the NYC pilot bounds. Excludes New Jersey outfalls, sanitary sewer overflows, and the underground pipe network.",
+  "interpretation": "An outfall location is a potential source, not evidence of a discharge. No measured discharge rate or bacterial load is supplied.",
+  "retrievedAt": "2026-09-16T17:17:43.879Z",
+  "sourceStatus": "saved_snapshot"
+}

@@ -27,7 +27,7 @@ Choose **Import data → Choose velocity JSON**. Files are read into memory in t
 - `u` means velocity **toward east**, `v` means velocity **toward north**; m/s, not cm/s, knots, model-grid axes, or a direction-from bearing.
 - Flatten each `[latitude, longitude]` array with **longitude changing fastest**. Index = latitude_index × longitude_count + longitude_index.
 - `wetMask` has one 1 (wet) or 0 (dry) per grid node. Cells requiring a dry interpolation corner are unavailable. Use 0 for velocities in dry nodes; NaN, Infinity, null and strings are rejected.
-- Current grids must already be converted to a regular geographic coordinate grid. Unstructured ADCIRC, sECOM or Delft3D meshes, projected coordinates and NetCDF files require a model-specific preprocessing adapter. Rotation and staggering of velocities must be resolved correctly before export.
+- Current grids must already be converted to a regular geographic coordinate grid. Native ADCIRC, sECOM or Delft3D grids/meshes, projected coordinates and NetCDF files require a model-specific preprocessing adapter. Rotation and staggering of velocities must be resolved correctly before export.
 - No spatial or temporal extrapolation is used. Playback stops at the lesser of six hours or available data (rounded down to five minutes).
 - A static wet mask cannot represent pluvial wetting/drying. The importer is for a small coastal pilot and does not automatically make the transport scientifically accurate.
 - The app assigns `validationStatus: Not verified by this application` regardless of any supplied claim.
@@ -50,3 +50,20 @@ Different organisms and units remain separate in popups; no inappropriate poolin
 ## Scenario export
 
 **Export scenario** downloads a JSON file with settings, scientific status, the selected frame's particles as a GeoJSON FeatureCollection, relative mass, source/model provenance, a NOAA snapshot and imported samples. The export is a scenario record, not a hydrodynamic-field import file. Keep the original model file separately to reproduce an imported-flow scenario. Random particle generation uses a fixed seed for repeatability.
+
+## Version 0.2: optional server sECOM feed
+
+`SECOM_FIELD_URL` is an optional provider-approved HTTPS endpoint on a Stevens domain. It must return the same prepared `hydrodynamic-field` JSON with two additional root fields:
+
+```json
+{
+  "modelFamily": "sECOM",
+  "provenance": "Actual model version, forecast cycle, vertical layer, original source and conversion details"
+}
+```
+
+These fields supplement the complete velocity schema; this fragment alone is not an importable file. Format/provenance checks do not establish model accuracy. No such numerical endpoint has been supplied yet, and no real sECOM field is bundled. `STEVENS_FIELD_URL` is accepted as a compatibility alias.
+
+Native sECOM NetCDF is not accepted directly. A model-specific adapter must handle the actual mesh, velocity staggering/rotation and vertical layers. File imports in the browser can still contain other prepared models, with their own names and provenance.
+
+`/api/observations`, `/api/sewers`, and `/api/advisories` exports are separate source-specific records. In particular, DEP's collection wall-clock time must not be silently converted to the strict UTC CSV schema without confirming its timezone.

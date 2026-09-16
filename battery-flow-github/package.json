@@ -1,10 +1,12 @@
 {
   "name": "battery-flow",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "NYC Battery microbial transport research map with NOAA observations and clearly labeled simulation.",
+  "description": "NYC Battery research map with official NOAA, DEP lab, CSO inventory and advisory data; optional uncalibrated transport.",
   "type": "module",
-  "engines": { "node": ">=22 <25" },
+  "engines": {
+    "node": ">=22 <25"
+  },
   "scripts": {
     "start": "node server.mjs",
     "dev": "node --watch server.mjs",

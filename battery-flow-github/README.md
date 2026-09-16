@@ -1,95 +1,86 @@
 # Battery Flow
 
-A self-contained NYC Battery research map for exploring microbial transport scenarios alongside NOAA water-level observations. Portable Node.js application prepared for Render.
+NYC Battery research map with actual NOAA water levels, published DEP bacterial indicators, official DEC CSO outfall locations, and DEP's own modeled waterbody advisories. Version 0.2 preserves the dark map interface and makes observations the default view.
 
-**Scientific status:** working visualization and integration prototype. It is not a validated live pathogen forecast. The Battery tide gauge does not detect pathogens or supply a two-dimensional velocity field.
+**This is not live detection of all pathogens. Stevens sECOM numerical output is not connected by default.** The optional tracer scenario remains uncalibrated.
 
-Start with [START-HERE.md](START-HERE.md) for GitHub upload and Render deployment.
+See [START-HERE.md](START-HERE.md) for updating your existing GitHub repository and Render service.
 
-## Included
+## Data included
 
-- Leaflet map focused on The Battery, NOAA station **8518750** (40.7006, -74.0142).
-- Server-side NOAA observation and astronomical-tide retrieval; shared five-minute cache; timeouts, coalesced requests, and explicit stale/unavailable states.
-- Animated directional arrows and a six-hour, seeded particle-transport scenario with five-minute playback frames.
-- Adjustable schematic current direction/speed, dispersion, release duration, and half-life; movable hypothetical source.
-- Fixed-scale relative tracer density with no fabricated concentration units or health thresholds.
-- Browser-local velocity JSON and lab sample CSV imports, strict size/schema validation, preserved units and censoring qualifiers.
-- Downloadable scenario JSON including current particle GeoJSON, parameters, input provenance, sample records, and limitations.
-- Responsive layout, keyboard-accessible controls, reduced-motion behavior, scientific explanation, and no login or database requirements.
-- Bundled Leaflet and fonts; only base map tiles and NOAA data require third-party services.
+| Layer | Source | What it represents |
+| --- | --- | --- |
+| Battery tide gauge | NOAA CO-OPS, station 8518750 | Timestamped water-level observations and astronomical tide predictions |
+| Enterococci and fecal coliform | NYC DEP Harbor Water Quality, dataset `5uug-f49n` | Dated lab results, with native units and detection-limit qualifiers |
+| CSO outfalls | NYS DEC official GIS inventory | Outfall coordinates, permit numbers and receiving waters; discharge status unknown |
+| Waterbody / CSO advisories | Current NYC DEP dashboard API | Official rainfall/model-based advisories, not direct bacterial or discharge measurements |
+| sECOM currents | Awaiting accessible Stevens numerical output | No fake numerical field is substituted |
+| Optional tracer scenario | This application's illustrative transport code | Relative tracer mass; no calibrated concentration or infectivity |
 
-## Run locally
+On September 16, 2026, the DEP query returned a latest collection date of December 16, 2025. The packaged lookup contains 102 latest indicator/layer results at 43 stations within the pilot bounds. The nearest mapped station to the Battery, N5, has top-sample results from December 1, 2025. Its coordinates come from a November 2, 2022 station record and are explicitly identified as historical.
 
-Install Node.js 22 LTS, then:
+The CSO snapshot contains 313 outfall locations in the pilot bounds, with the source layer's data-edit timestamp of November 18, 2025. The advisory API returned 45 waterbody records for each of its WQ and CSO products. These are source-specific counts, not evidence of full monitoring coverage.
+
+See [docs/DATA-SOURCES.md](docs/DATA-SOURCES.md) for exact provenance, refresh behavior and limitations.
+
+## Run
+
+Use Node.js 22, then:
 
 ```bash
 npm ci
 npm start
 ```
 
-Open `http://localhost:3000`. For source watching, use `npm run dev`. No `.env` file is required; `PORT` and `HOST` are optional environment variables.
+Open `http://localhost:3000`. `npm run dev` watches source changes. `npm run check` verifies source syntax, assets, and meaningful data/transport behavior. There is no frontend bundler or runtime npm dependency.
 
-```bash
-npm run check
-```
+Render supplies `PORT`. No API key or database is required for the connected public sources.
 
-The build step checks source syntax and local assets. There is no bundler or runtime npm dependency. Node's built-in HTTP server serves the frontend and the NOAA proxy.
-
-## Endpoints
+## Server endpoints
 
 | Route | Description |
 | --- | --- |
-| `/` | Research map |
-| `/api/health` | Render health check; application readiness independent of NOAA availability |
-| `/api/station` | Battery observations, predictions, latest reading, timestamps, quality/flags, source URLs and feed status |
+| `/api/health` | Application readiness, independent of upstream data availability |
+| `/api/station` | NOAA readings, predictions, timestamps and quality flags |
+| `/api/observations` | DEP laboratory results and sample/location provenance |
+| `/api/sewers` | DEC outfall GeoJSON inventory; no inferred discharge |
+| `/api/advisories` | Official DEP WQ and CSO advisory records and feed status |
+| `/api/stevens` | sECOM connection status; configured numerical data only when available |
 
-The server does not accept uploaded files or arbitrary external URLs. Imports are processed locally in the current browser tab. Reloading the page clears imported files. Exported scenario files may contain your imported sample data; store/share them accordingly.
+The browser contacts this server for feeds. The server uses fixed public data endpoints, bounded responses, caches and timeouts. It exposes no arbitrary URL proxy. Local JSON/CSV imports stay in the browser tab. Observation and sewer/advisory exports retain source dates and provenance.
 
-## Research data contracts
+Authentic historical DEP and outfall snapshots are packaged for source outages. They are labeled saved snapshots and keep their original dates. Advisory status has no packaged fallback: a failure is unknown, or stale if a prior response remains cached.
 
-See [docs/DATA-FORMATS.md](docs/DATA-FORMATS.md) and `examples/`.
+## Stevens sECOM
 
-The example velocity field and example lab table are **synthetic test data**. They are never loaded automatically. Their names identify them as demonstrations.
+The requested model is **Stevens Estuarine and Coastal Ocean Model (sECOM)**. NYHOPS is an application/forecast system using Stevens hydrodynamics; its graphics do not supply a numerical transport field by themselves.
 
-External velocities are bilinearly interpolated in space and linearly in time, within the provided grid and time range only. Coordinates are geographic WGS84 (EPSG:4326), velocities are eastward/northward in meters per second. Static masks only in version 0.1; use a later adapter for wetting/drying inundation fields.
+The publicly linked data page returned HTTP 403 and the published Colossus THREDDS catalog returned HTTP 502 during this integration. No actual sECOM velocity field, source code, executable, grid or calibrated microbial module has been acquired. The app does not run sECOM on Render.
 
-Changing the tracer dropdown changes a label only. No organism-specific calibration is implied. The user sets the half-life. The app does not infer concentration from indicator results, tide height, or sample labels.
+An accessible provider-approved output or endpoint is needed. See [docs/STEVENS-AND-SEWER-INPUTS.md](docs/STEVENS-AND-SEWER-INPUTS.md). Native sECOM outputs require a source-specific adapter; the app currently accepts prepared east/north velocity JSON, not arbitrary NetCDF files.
 
-## Limitations that affect interpretation
+Only after a suitable Stevens-hosted JSON feed exists, set `SECOM_FIELD_URL` in Render. It must be HTTPS on a Stevens domain, obey [docs/DATA-FORMATS.md](docs/DATA-FORMATS.md), and declare `modelFamily: "sECOM"` with provenance. That declaration is not scientific validation. Browser-local velocity imports also remain available.
 
-1. The default velocity field and water mask are schematic, not validated harbor circulation or surveyed bathymetry. Display arrows show that configured field, never a velocity derived from the Battery's scalar water-level record.
-2. The normalized hypothetical release has no measured source strength, depth, or concentration. A plotted particle represents relative tracer mass, not one organism. No infectivity is modeled.
-3. Transport uses Euler stepping, Brownian dispersion, first-order decay, and illustrative boundary rejection. It omits settling, resuspension, attachment, stratification, growth, uncertainty calibration, and sewer–surface coupling. A static mask and boundary rejection can retain particles artificially; scientific deployment needs verified numerical boundary conditions and convergence testing.
-4. Sample points are historical at their collection times, not automatically current. `<` and `>` qualifiers are shown as supplied. They are not substituted with zero or used to assimilate/calibrate the plume.
-5. No automatic ingestion of pathogen monitoring, overflow detection, source attribution, forecast validation, conformal guarantees, environmental-justice assessment, or health-outcome analysis is included.
-6. This pilot covers coastal receiving water; pluvial streets and basements require a separate coupled inundation model and observations.
-7. The app does not certify water safety or establish a calibrated concentration field. A visually smooth plume is not evidence of accuracy.
+## Scientific limitations
 
-## Extending toward a defensible forecast
+- Indicator samples are historical observations at stations. They do not reveal today's concentrations between stations or the presence of every pathogen. No CFU/MPN conversion is assumed for DEP's published `cells/100 mL` fields.
+- Recent DEP rows lack coordinates. A bounded historical station lookup is used and dated. Unmatched and out-of-area records are excluded. Exported data explains the lookup.
+- Outfall locations are potential sources. Neither inventory points nor DEP advisory products provide calibrated per-outfall discharge hydrographs or microbial loads. New Jersey outfalls, full sewer pipes/regulators and pluvial inundation are not included.
+- An official advisory is a model-based agency product. No advisory is not a declaration of safe water. The app preserves the provider's timezone-unspecified timestamps without inventing a timezone.
+- The optional scenario uses schematic flow unless a prepared external field is loaded. Transport uses Euler stepping, Brownian dispersion, first-order decay and illustrative boundary rejection. Its static mask, hypothetical source and biological parameters need independent verification before scientific use.
+- Imported velocities are interpolated only inside their grid/time coverage. Model accuracy, concentration calibration, uncertainty bounds, environmental-justice coverage and health outcomes have not been validated.
 
-Follow [docs/RESEARCH-ROADMAP.md](docs/RESEARCH-ROADMAP.md). The intended path is validated hydrodynamics → measured source loading → organism-specific fate → independent event validation → uncertainty calibration → operational monitoring.
+## Project layout
 
-## Project structure
+- `public/`: frontend, worker, illustrative transport, import validation, reference waterbody boundaries, bundled Leaflet and fonts.
+- `src/`: NOAA, DEP, sECOM connection and sewer/advisory clients.
+- `data/`: authentic dated DEP and DEC inventory fallback snapshots.
+- `test/`: feed behavior, provenance, missing-data and transport checks.
+- `examples/`: explicitly synthetic velocity/sample import fixtures; never auto-loaded.
+- `docs/`: sources, data contracts, validation limits and required research inputs.
 
-```text
-public/          Browser app, scientific model, validation, worker, styles and local vendor assets
-src/noaa.mjs     NOAA API client, validation, timestamps and cache
-server.mjs       Node HTTP server and response headers
-test/            Transport, imported-data and feed-behavior checks
-examples/        Explicitly synthetic import examples
-docs/            Data contracts and research integration roadmap
-scripts/         Build verification and example generation
-render.yaml      Render Blueprint
-START-HERE.md    Manual GitHub and Render instructions
-```
+## Attribution
 
-## Sources and acknowledgements
+[NOAA CO-OPS](https://api.tidesandcurrents.noaa.gov/api/prod/), [NYC DEP Harbor Water Quality](https://www.nyc.gov/site/dep/water/harbor-water-quality.page), [NYS DEC CSO inventory](https://data.gis.ny.gov/datasets/nysdec::combined-sewer-overflow-cso-outfalls/about), [NYC DEP advisories](https://www.nyc.gov/site/dep/water/waterbody-advisories.page), and [Stevens / NYHOPS](https://hudson.dl.stevens-tech.edu/maritimeforecast/maincontrol.shtml).
 
-- [NOAA Battery station](https://tidesandcurrents.noaa.gov/stationhome.html?id=8518750)
-- [NOAA CO-OPS API](https://api.tidesandcurrents.noaa.gov/api/prod/)
-- [NYC DEP Harbor Water Quality](https://www.nyc.gov/site/dep/water/harbor-water-quality.page)
-- [Leaflet](https://leafletjs.com/), bundled v1.9.4; license in `public/vendor/LEAFLET-LICENSE.txt`.
-- [OpenStreetMap](https://www.openstreetmap.org/copyright) data and [CARTO](https://carto.com/attributions) tiles, with map attribution retained. Review provider terms and usage limits for production traffic.
-- Space Grotesk and IBM Plex Mono fonts; applicable licenses in `public/vendor/`.
-
-The linked [coastal analyzer](https://coastalanalysis.onrender.com/) informed the dark map presentation. This is an independent application; no access to or modification of that site's repository is implied.
+Leaflet 1.9.4 and fonts are bundled with their licenses. Base map data is attributed to OpenStreetMap and CARTO in the map. The linked coastal analyzer inspired the visual presentation; this app does not modify that site's repository.
